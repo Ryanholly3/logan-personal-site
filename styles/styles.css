@@ -1,5 +1,9 @@
+body {
+  margin: 12px;
+}
+
 header {
-  height: 50px;
+  height: auto;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,6 +16,8 @@ header {
 }
 
 header .name-logo {
+  width: 35%;
+  padding: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,6 +30,7 @@ header .name-logo {
 header .name-logo .logo {
   height: 50px;
   width: auto;
+  padding-right: 12px;
 }
 
 header .name-logo .name {
@@ -32,12 +39,96 @@ header .name-logo .name {
   color: #efe4d8;
 }
 
+header .navigation {
+  width: 65%;
+  padding: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header .navigation .nav-link-container {
+  width: 25%;
+  text-align: center;
+}
+
+header .navigation .nav-link-container .nav-links {
+  letter-spacing: 1px;
+  font-family: "Bebas Neue", cursive;
+  color: #efe4d8;
+}
+
 .home_about-me {
   width: 100%;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   background-image: url("../assets/homePageCaseStudy/BackgroundImage.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.home_about-me .home_about-me_container {
+  width: 100%;
+  padding: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.home_about-me .home_about-me_container .home_about-me_left-container {
+  width: 55%;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home_about-me .home_about-me_container .home_about-me_left-container .home_about-me_left-container_title {
+  font-family: "Archivo Black", sans-serif;
+  letter-spacing: 1px;
+  font-size: 42px;
+  color: #efe4d8;
+}
+
+.home_about-me .home_about-me_container .home_about-me_left-container .home_about-me_left-container_text {
+  font-family: "Jost", sans-serif;
+  color: #efe4d8;
+}
+
+.home_about-me .home_about-me_container .home_about-me_right-container {
+  width: 45%;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home_about-me .home_about-me_container .home_about-me_right-container .home_about-me_right_portrait {
+  height: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
