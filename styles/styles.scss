@@ -64,7 +64,7 @@ header {
 
 .home_about-me {
   width: 100%;
-  height: 100vh;
+  height: 130vh;
   display: flex;
   flex-direction: row;
   background-image: url("../assets/homePageCaseStudy/BackgroundImage.png");
@@ -74,99 +74,125 @@ header {
 
   .home_about-me_container {
     width: 100%;
-    padding: 42px;
+    margin: 42px 42px 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
-    .home_about-me_left-container {
-      width: 50%;
-      height: 500px;
-      padding: 12px;
+    .home_about-me_top-container {
+      width: 100%;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-  
-      .home_about-me_left-container_title {
-        font-family: $archivoBlack;
-        letter-spacing: 1px;
-        font-size: 40px;
-        color: $cream;
-      }
+      flex-direction: row;
 
-      .home_about-me_left-container_divider {
-        margin: 0;
+      .home_about-me_left-container {
         width: 50%;
-        border-top: 2px solid $cream;
-      }
-  
-      .home_about-me_left-container_text {
-        font-family: $jost;
-        font-size: 18px;
-        margin: 40px 0;
-        color: $cream;
-        opacity: 75%;
-      }
-
-      .home_about-me_left-container_social-container {
-        width: 50%;
-        height: 32px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-        .home_about-me_left-container_social-icons {
-          height: 24px;
-          width: 24px;
-        }
-
-        .home_about-me_left-container_social-icons_email {
-          height: 24px;
-          width: 28px;
-        }
-      }
-    }
-  
-    .home_about-me_right-container {
-      width: 50%;
-      height: 500px;
-      padding: 12px;
-      display: flex;
-      justify-content: center;
-      
-      .home_about-me_right_portrait-frame {
-        position: relative;
-        width: 398px;
-        background-color: $greyBlue;
-      }
-
-      .home_about-me_right_portrait {
-        position: absolute;
         height: 500px;
-        width: 398px;
-        z-index: 1000;
-        left: 20px;
-        bottom: 20px;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    
+        .home_about-me_left-container_title {
+          font-family: $archivoBlack;
+          letter-spacing: 1px;
+          font-size: 40px;
+          color: $cream;
+        }
+  
+        .home_about-me_left-container_divider {
+          margin: 0;
+          width: 50%;
+          border-top: 2px solid $cream;
+        }
+    
+        .home_about-me_left-container_text {
+          font-family: $jost;
+          font-size: 18px;
+          margin: 40px 0;
+          color: $cream;
+          opacity: 75%;
+        }
+  
+        .home_about-me_left-container_social-container {
+          width: 50%;
+          height: 32px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+  
+          .home_about-me_left-container_social-icons {
+            height: 24px;
+            width: 24px;
+          }
+  
+          .home_about-me_left-container_social-icons_email {
+            height: 24px;
+            width: 28px;
+          }
+        }
+      }
+    
+      .home_about-me_right-container {
+        width: 50%;
+        height: 500px;
+        padding: 12px;
+        display: flex;
+        justify-content: center;
+        
+        .home_about-me_right_portrait-frame {
+          position: relative;
+          width: 398px;
+          background-color: $greyBlue;
+        }
+  
+        .home_about-me_right_portrait {
+          position: absolute;
+          height: 500px;
+          width: 398px;
+          z-index: 1000;
+          left: 20px;
+          bottom: 20px;
+        }
       }
     }
 
     .home_about-me_bottom-container {
-      width: 100%;
-      height: 200px;
+      width: 95%;
+      margin-top: 60px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
       .home_about-me_bottom-container_title {
         font-family: $archivoBlack;
         letter-spacing: 1px;
         font-size: 40px;
+        margin-top: 0;
         color: $cream;
       }
 
       .home_about-me_bottom-container_text {
-        font-family: $archivoBlack;
-        letter-spacing: 1px;
+        margin: 0;
+        font-family: $jost;
         font-size: 21px;
         color: $cream;
         opacity: 75%;
+      }
+    }
+
+    .home_about-me_bottom_continue-reading-container {
+      width: 100%;
+      height: 32px;
+      text-align: right;
+
+      .home_about-me_bottom_continue-reading-text {
+        margin: 12px 12px 0 0;
+        font-family: $jost;
+        font-size: 21px;
+        color: $cream;
+        opacity: 75%;
+        text-decoration: underline;
       }
     }
   }
@@ -174,6 +200,109 @@ header {
 
 // CS DIGILINE
 
+.home_cs-digiline {
+  height: 442px;
+  width: 100%;
+  background-color: $greyBlue;
+
+  .home_cs-digiline_container {
+    height: 100%;
+    margin: 0 42px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    .home_cs-digiline_container-background {
+      width: 637px;
+      z-index: 1;
+      position: absolute;
+      bottom: 24px;
+      left: 15%;
+    }
+
+    .home_cs-digiline_container-left {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      z-index: 1000;
+
+      .home_cs-digiline_container-left_title {
+        width: 50%;
+      }
+
+      .home_cs-digiline_container-left_description-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .home_cs-digiline_container-left_ui-designer {
+          font-family: $bebasNeue;
+          font-size: 14px;
+          letter-spacing: 1px;
+          margin: 0;
+          color: $cream;
+          opacity: 55%;
+        }
+
+        .home_cs-digiline_container-left_header {
+          font-family: $archivoBlack;
+          letter-spacing: 1px;
+          font-size: 30px;
+          margin: 18px 0;
+          color: $cream;
+        }
+
+        .home_cs-digiline_container-left_description {
+          font-family: $jost;
+          font-size: 14px;
+          margin: 0;
+          color: $cream;
+        }
+      }
+
+      .home_cs-digiline_container-left_button {
+
+      }
+    }
+
+    .home_cs-digiline_container-right {
+      width: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 // CS HOWL
+
+.home_cs-howl {
+  height: 442px;
+  width: 100%;
+  background-color: $darkBlue;
+
+  .home_cs-howl_container {
+    height: 100%;
+    margin: 0 42px;
+    display: flex;
+    flex-direction: row;
+  }
+}
 
 // CS GOOD APPLES

@@ -75,7 +75,7 @@ header .navigation .nav-link-container .nav-links {
 
 .home_about-me {
   width: 100%;
-  height: 100vh;
+  height: 130vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,7 +91,18 @@ header .navigation .nav-link-container .nav-links {
 
 .home_about-me .home_about-me_container {
   width: 100%;
-  padding: 42px;
+  margin: 42px 42px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home_about-me .home_about-me_container .home_about-me_top-container {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,7 +112,7 @@ header .navigation .nav-link-container .nav-links {
           flex-direction: row;
 }
 
-.home_about-me .home_about-me_container .home_about-me_left-container {
+.home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container {
   width: 50%;
   height: 500px;
   padding: 12px;
@@ -120,20 +131,20 @@ header .navigation .nav-link-container .nav-links {
           align-items: flex-start;
 }
 
-.home_about-me .home_about-me_container .home_about-me_left-container .home_about-me_left-container_title {
+.home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container .home_about-me_left-container_title {
   font-family: "Archivo Black", sans-serif;
   letter-spacing: 1px;
   font-size: 40px;
   color: #efe4d8;
 }
 
-.home_about-me .home_about-me_container .home_about-me_left-container .home_about-me_left-container_divider {
+.home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container .home_about-me_left-container_divider {
   margin: 0;
   width: 50%;
   border-top: 2px solid #efe4d8;
 }
 
-.home_about-me .home_about-me_container .home_about-me_left-container .home_about-me_left-container_text {
+.home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container .home_about-me_left-container_text {
   font-family: "Jost", sans-serif;
   font-size: 18px;
   margin: 40px 0;
@@ -141,7 +152,7 @@ header .navigation .nav-link-container .nav-links {
   opacity: 75%;
 }
 
-.home_about-me .home_about-me_container .home_about-me_left-container .home_about-me_left-container_social-container {
+.home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container .home_about-me_left-container_social-container {
   width: 50%;
   height: 32px;
   display: -webkit-box;
@@ -156,17 +167,17 @@ header .navigation .nav-link-container .nav-links {
           justify-content: space-between;
 }
 
-.home_about-me .home_about-me_container .home_about-me_left-container .home_about-me_left-container_social-container .home_about-me_left-container_social-icons {
+.home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container .home_about-me_left-container_social-container .home_about-me_left-container_social-icons {
   height: 24px;
   width: 24px;
 }
 
-.home_about-me .home_about-me_container .home_about-me_left-container .home_about-me_left-container_social-container .home_about-me_left-container_social-icons_email {
+.home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container .home_about-me_left-container_social-container .home_about-me_left-container_social-icons_email {
   height: 24px;
   width: 28px;
 }
 
-.home_about-me .home_about-me_container .home_about-me_right-container {
+.home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_right-container {
   width: 50%;
   height: 500px;
   padding: 12px;
@@ -178,13 +189,13 @@ header .navigation .nav-link-container .nav-links {
           justify-content: center;
 }
 
-.home_about-me .home_about-me_container .home_about-me_right-container .home_about-me_right_portrait-frame {
+.home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_right-container .home_about-me_right_portrait-frame {
   position: relative;
   width: 398px;
   background-color: #2e383f;
 }
 
-.home_about-me .home_about-me_container .home_about-me_right-container .home_about-me_right_portrait {
+.home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_right-container .home_about-me_right_portrait {
   position: absolute;
   height: 500px;
   width: 398px;
@@ -194,22 +205,166 @@ header .navigation .nav-link-container .nav-links {
 }
 
 .home_about-me .home_about-me_container .home_about-me_bottom-container {
-  width: 100%;
-  height: 200px;
+  width: 95%;
+  margin-top: 60px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .home_about-me .home_about-me_container .home_about-me_bottom-container .home_about-me_bottom-container_title {
   font-family: "Archivo Black", sans-serif;
   letter-spacing: 1px;
   font-size: 40px;
+  margin-top: 0;
   color: #efe4d8;
 }
 
 .home_about-me .home_about-me_container .home_about-me_bottom-container .home_about-me_bottom-container_text {
-  font-family: "Archivo Black", sans-serif;
-  letter-spacing: 1px;
+  margin: 0;
+  font-family: "Jost", sans-serif;
   font-size: 21px;
   color: #efe4d8;
   opacity: 75%;
+}
+
+.home_about-me .home_about-me_container .home_about-me_bottom_continue-reading-container {
+  width: 100%;
+  height: 32px;
+  text-align: right;
+}
+
+.home_about-me .home_about-me_container .home_about-me_bottom_continue-reading-container .home_about-me_bottom_continue-reading-text {
+  margin: 12px 12px 0 0;
+  font-family: "Jost", sans-serif;
+  font-size: 21px;
+  color: #efe4d8;
+  opacity: 75%;
+  text-decoration: underline;
+}
+
+.home_cs-digiline {
+  height: 442px;
+  width: 100%;
+  background-color: #2e383f;
+}
+
+.home_cs-digiline .home_cs-digiline_container {
+  height: 100%;
+  margin: 0 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+.home_cs-digiline .home_cs-digiline_container .home_cs-digiline_container-background {
+  width: 637px;
+  z-index: 1;
+  position: absolute;
+  bottom: 24px;
+  left: 15%;
+}
+
+.home_cs-digiline .home_cs-digiline_container .home_cs-digiline_container-left {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1000;
+}
+
+.home_cs-digiline .home_cs-digiline_container .home_cs-digiline_container-left .home_cs-digiline_container-left_title {
+  width: 50%;
+}
+
+.home_cs-digiline .home_cs-digiline_container .home_cs-digiline_container-left .home_cs-digiline_container-left_description-container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home_cs-digiline .home_cs-digiline_container .home_cs-digiline_container-left .home_cs-digiline_container-left_description-container .home_cs-digiline_container-left_ui-designer {
+  font-family: "Bebas Neue", cursive;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 0;
+  color: #efe4d8;
+  opacity: 55%;
+}
+
+.home_cs-digiline .home_cs-digiline_container .home_cs-digiline_container-left .home_cs-digiline_container-left_description-container .home_cs-digiline_container-left_header {
+  font-family: "Archivo Black", sans-serif;
+  letter-spacing: 1px;
+  font-size: 30px;
+  margin: 18px 0;
+  color: #efe4d8;
+}
+
+.home_cs-digiline .home_cs-digiline_container .home_cs-digiline_container-left .home_cs-digiline_container-left_description-container .home_cs-digiline_container-left_description {
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  margin: 0;
+  color: #efe4d8;
+}
+
+.home_cs-digiline .home_cs-digiline_container .home_cs-digiline_container-right {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1000;
+}
+
+.home_cs-howl {
+  height: 442px;
+  width: 100%;
+  background-color: #1b262f;
+}
+
+.home_cs-howl .home_cs-howl_container {
+  height: 100%;
+  margin: 0 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 /*# sourceMappingURL=styles.css.map */
