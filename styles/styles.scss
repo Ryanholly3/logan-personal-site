@@ -3,7 +3,14 @@
 // GLOBAL
 
 body {
-  margin: 12px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  background-color: $darkBlue;
+
+  .page-container {
+    max-width: 1024px;
+  }
 }
 
 header {
@@ -67,38 +74,99 @@ header {
 
   .home_about-me_container {
     width: 100%;
-    padding: 24px;
+    padding: 42px;
     display: flex;
     flex-direction: row;
 
     .home_about-me_left-container {
-      width: 55%;
-      height: 600px;
+      width: 50%;
+      height: 500px;
+      padding: 12px;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: flex-start;
   
       .home_about-me_left-container_title {
         font-family: $archivoBlack;
         letter-spacing: 1px;
-        font-size: 42px;
+        font-size: 40px;
         color: $cream;
+      }
+
+      .home_about-me_left-container_divider {
+        margin: 0;
+        width: 50%;
+        border-top: 2px solid $cream;
       }
   
       .home_about-me_left-container_text {
         font-family: $jost;
+        font-size: 18px;
+        margin: 40px 0;
         color: $cream;
+        opacity: 75%;
+      }
+
+      .home_about-me_left-container_social-container {
+        width: 50%;
+        height: 32px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .home_about-me_left-container_social-icons {
+          height: 24px;
+          width: 24px;
+        }
+
+        .home_about-me_left-container_social-icons_email {
+          height: 24px;
+          width: 28px;
+        }
       }
     }
   
     .home_about-me_right-container {
-      width: 45%;
-      height: 600px;
+      width: 50%;
+      height: 500px;
+      padding: 12px;
       display: flex;
       justify-content: center;
+      
+      .home_about-me_right_portrait-frame {
+        position: relative;
+        width: 398px;
+        background-color: $greyBlue;
+      }
 
       .home_about-me_right_portrait {
-        height: 100%;
+        position: absolute;
+        height: 500px;
+        width: 398px;
+        z-index: 1000;
+        left: 20px;
+        bottom: 20px;
+      }
+    }
+
+    .home_about-me_bottom-container {
+      width: 100%;
+      height: 200px;
+
+      .home_about-me_bottom-container_title {
+        font-family: $archivoBlack;
+        letter-spacing: 1px;
+        font-size: 40px;
+        color: $cream;
+      }
+
+      .home_about-me_bottom-container_text {
+        font-family: $archivoBlack;
+        letter-spacing: 1px;
+        font-size: 21px;
+        color: $cream;
+        opacity: 75%;
       }
     }
   }
