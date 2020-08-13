@@ -311,6 +311,15 @@ header .navigation .nav-link-container .nav-links {
   left: -42px;
 }
 
+.home_cs .home_cs_container .home_cs_container-goodapples-background {
+  width: 193px;
+  height: 207px;
+  position: absolute;
+  z-index: 1;
+  bottom: 89px;
+  left: 365px;
+}
+
 .home_cs .home_cs_container .home_cs_container-1 {
   width: 40%;
   margin: 36px 0;
@@ -383,9 +392,9 @@ header .navigation .nav-link-container .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
