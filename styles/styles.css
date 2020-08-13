@@ -406,21 +406,61 @@ header .navigation .nav-link-container .nav-links {
   height: 316px;
 }
 
-.home_cs-howl {
-  height: 442px;
+.home_email-form {
   width: 100%;
+  height: 514px;
   background-color: #1b262f;
-}
-
-.home_cs-howl .home_cs-howl_container {
-  height: 100%;
-  margin: 0 42px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home_email-form .home_email-form_container {
+  width: 80%;
+  height: calc(100% - 64px);
+  margin: 32px 0;
+  text-align: center;
+}
+
+.home_email-form .home_email-form_container .home_email-form_container-title {
+  font-family: "Archivo Black", sans-serif;
+  letter-spacing: 1px;
+  font-size: 30px;
+  color: #efe4d8;
+  margin: 0;
+}
+
+.home_email-form .home_email-form_container .home_email-form_container-text {
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  color: #efe4d8;
+  margin: 12px 0;
+}
+
+footer {
+  width: 100%;
+  height: 207px;
+  background-color: #efe4d8;
+}
+
+footer .footer_container {
+  height: 80px;
+  padding: 32px 10% 62px 10%;
+}
+
+footer .footer_container .footer_container-line {
+  margin: 0;
+  width: 100%;
+  border-top: 3px solid #1b262f 22%;
+}
+
+footer .footer_container .footer_container_text-container {
+  height: 100%;
 }
 /*# sourceMappingURL=styles.css.map */

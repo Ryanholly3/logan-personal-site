@@ -331,31 +331,56 @@ header {
   }
 }
 
+// EMAIL FORM
 
-
-
-
-
-
-
-
-
-
-
-
-// CS HOWL
-
-.home_cs-howl {
-  height: 442px;
+.home_email-form {
   width: 100%;
+  height: 514px;
   background-color: $darkBlue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  .home_cs-howl_container {
-    height: 100%;
-    margin: 0 42px;
-    display: flex;
-    flex-direction: row;
+  .home_email-form_container {
+    width: 80%;
+    height: calc(100% - 64px);
+    margin: 32px 0;
+    text-align: center;
+
+    .home_email-form_container-title {
+      font-family: $archivoBlack;
+      letter-spacing: 1px;
+      font-size: 30px;
+      color: $cream;
+      margin: 0;
+    }
+    .home_email-form_container-text {
+      font-family: $jost;
+      font-size: 18px;
+      color: $cream;
+      margin: 12px 0;
+    }
   }
 }
 
-// CS GOOD APPLES
+// FOOTER
+
+footer {
+  width: 100%;
+  height: 207px;
+  background-color: $cream;
+
+  .footer_container {
+    height: 80px;
+    padding: 32px 10% 62px 10%;
+    .footer_container-line {
+      margin: 0;
+      width: 100%;
+      border-top: 3px solid $darkBlue 22%;
+    }
+    .footer_container_text-container {
+      height: 100%;
+    }
+
+  }
+}
