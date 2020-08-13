@@ -73,6 +73,32 @@ header .navigation .nav-link-container .nav-links {
   color: #efe4d8;
 }
 
+.background-greyBlue {
+  background-color: #2e383f;
+}
+
+.background-darkBlue {
+  background-color: #1b262f;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.align-items-flex-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.margin-top-bottom {
+  margin: 36px 0;
+}
+
 .home_about-me {
   width: 100%;
   height: 130vh;
@@ -251,13 +277,12 @@ header .navigation .nav-link-container .nav-links {
   text-decoration: underline;
 }
 
-.home_cs-digiline {
+.home_cs {
   height: 442px;
   width: 100%;
-  background-color: #2e383f;
 }
 
-.home_cs-digiline .home_cs-digiline_container {
+.home_cs .home_cs_container {
   height: 100%;
   margin: 0 42px;
   display: -webkit-box;
@@ -270,7 +295,7 @@ header .navigation .nav-link-container .nav-links {
   position: relative;
 }
 
-.home_cs-digiline .home_cs-digiline_container .home_cs-digiline_container-background {
+.home_cs .home_cs_container .home_cs_container-digiline-background {
   width: 637px;
   z-index: 1;
   position: absolute;
@@ -278,8 +303,17 @@ header .navigation .nav-link-container .nav-links {
   left: 15%;
 }
 
-.home_cs-digiline .home_cs-digiline_container .home_cs-digiline_container-left {
+.home_cs .home_cs_container .home_cs_container-howl-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  left: -42px;
+}
+
+.home_cs .home_cs_container .home_cs_container-1 {
   width: 40%;
+  margin: 36px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -293,11 +327,11 @@ header .navigation .nav-link-container .nav-links {
   z-index: 1000;
 }
 
-.home_cs-digiline .home_cs-digiline_container .home_cs-digiline_container-left .home_cs-digiline_container-left_title {
+.home_cs .home_cs_container .home_cs_container-1 .home_cs_container-1_title {
   width: 50%;
 }
 
-.home_cs-digiline .home_cs-digiline_container .home_cs-digiline_container-left .home_cs-digiline_container-left_description-container {
+.home_cs .home_cs_container .home_cs_container-1 .home_cs_container-1_description-container {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -312,7 +346,7 @@ header .navigation .nav-link-container .nav-links {
           justify-content: center;
 }
 
-.home_cs-digiline .home_cs-digiline_container .home_cs-digiline_container-left .home_cs-digiline_container-left_description-container .home_cs-digiline_container-left_ui-designer {
+.home_cs .home_cs_container .home_cs_container-1 .home_cs_container-1_description-container .home_cs_container-1_ui-designer {
   font-family: "Bebas Neue", cursive;
   font-size: 14px;
   letter-spacing: 1px;
@@ -321,7 +355,7 @@ header .navigation .nav-link-container .nav-links {
   opacity: 55%;
 }
 
-.home_cs-digiline .home_cs-digiline_container .home_cs-digiline_container-left .home_cs-digiline_container-left_description-container .home_cs-digiline_container-left_header {
+.home_cs .home_cs_container .home_cs_container-1 .home_cs_container-1_description-container .home_cs_container-1_header {
   font-family: "Archivo Black", sans-serif;
   letter-spacing: 1px;
   font-size: 30px;
@@ -329,15 +363,23 @@ header .navigation .nav-link-container .nav-links {
   color: #efe4d8;
 }
 
-.home_cs-digiline .home_cs-digiline_container .home_cs-digiline_container-left .home_cs-digiline_container-left_description-container .home_cs-digiline_container-left_description {
+.home_cs .home_cs_container .home_cs_container-1 .home_cs_container-1_description-container .home_cs_container-1_description {
   font-family: "Jost", sans-serif;
   font-size: 14px;
   margin: 0;
   color: #efe4d8;
 }
 
-.home_cs-digiline .home_cs-digiline_container .home_cs-digiline_container-right {
+.home_cs .home_cs_container .home_cs_container-1 .home_cs_container-1_button {
+  height: 36px;
+  width: 130px;
+  border: 3px solid #efe4d8;
+  border-radius: 18px;
+}
+
+.home_cs .home_cs_container .home_cs_container-2 {
   width: 60%;
+  margin: 36px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -348,6 +390,11 @@ header .navigation .nav-link-container .nav-links {
       -ms-flex-align: center;
           align-items: center;
   z-index: 1000;
+}
+
+.home_cs .home_cs_container .home_cs_container-2 .home_cs_container-2_img {
+  width: 541px;
+  height: 316px;
 }
 
 .home_cs-howl {

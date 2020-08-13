@@ -60,6 +60,30 @@ header {
 
 }
 
+.background-greyBlue {
+  background-color: $greyBlue
+}
+
+.background-darkBlue {
+  background-color: $darkBlue
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.align-items-flex-end {
+  align-items: flex-end
+}
+
+.margin-top-bottom {
+  margin: 36px 0;
+}
+
 // HOME PAGE
 
 .home_about-me {
@@ -198,21 +222,22 @@ header {
   }
 }
 
-// CS DIGILINE
+// CS GLOBAL STYLES
 
-.home_cs-digiline {
+.home_cs {
   height: 442px;
   width: 100%;
-  background-color: $greyBlue;
 
-  .home_cs-digiline_container {
+  .home_cs_container {
     height: 100%;
     margin: 0 42px;
     display: flex;
     flex-direction: row;
     position: relative;
 
-    .home_cs-digiline_container-background {
+
+    // Background img specs
+    .home_cs_container-digiline-background {
       width: 637px;
       z-index: 1;
       position: absolute;
@@ -220,25 +245,35 @@ header {
       left: 15%;
     }
 
-    .home_cs-digiline_container-left {
+    .home_cs_container-howl-background {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 1;
+      left: -42px;
+    }
+    // end background img specs
+
+    .home_cs_container-1 {
       width: 40%;
+      margin: 36px 0;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       z-index: 1000;
 
-      .home_cs-digiline_container-left_title {
+      .home_cs_container-1_title {
         width: 50%;
       }
 
-      .home_cs-digiline_container-left_description-container {
+      .home_cs_container-1_description-container {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
 
-        .home_cs-digiline_container-left_ui-designer {
+        .home_cs_container-1_ui-designer {
           font-family: $bebasNeue;
           font-size: 14px;
           letter-spacing: 1px;
@@ -247,7 +282,7 @@ header {
           opacity: 55%;
         }
 
-        .home_cs-digiline_container-left_header {
+        .home_cs_container-1_header {
           font-family: $archivoBlack;
           letter-spacing: 1px;
           font-size: 30px;
@@ -255,7 +290,7 @@ header {
           color: $cream;
         }
 
-        .home_cs-digiline_container-left_description {
+        .home_cs_container-1_description {
           font-family: $jost;
           font-size: 14px;
           margin: 0;
@@ -263,17 +298,26 @@ header {
         }
       }
 
-      .home_cs-digiline_container-left_button {
-
+      .home_cs_container-1_button {
+        height: 36px;
+        width: 130px;
+        border: 3px solid $cream;
+        border-radius: 18px;
       }
     }
 
-    .home_cs-digiline_container-right {
+    .home_cs_container-2 {
       width: 60%;
+      margin: 36px 0;
       display: flex;
       justify-content: center;
       align-items: center;
       z-index: 1000;
+
+      .home_cs_container-2_img {
+        width: 541px;
+        height: 316px;
+      }
     }
   }
 }
