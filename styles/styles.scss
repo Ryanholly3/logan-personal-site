@@ -54,11 +54,47 @@ header {
         letter-spacing: 1px;
         font-family: $bebasNeue;
         color: $cream;
+        cursor: pointer;
+      }
+
+      .nav-links:hover {
+        opacity: 50%;
       }
     }
   }
-
 }
+
+
+
+.custom-button {
+  height: 36px;
+  width: 128px;
+  border: 2px solid $cream;
+  border-radius: 16px;
+  color: $cream;
+  background-color: rgba($cream, 0);
+  font-family: $bebasNeue;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+
+  .custom-button-text {
+    display: block;
+    margin-top: 4px;
+  }
+  
+}
+.custom-button:hover {
+  background-color: rgba($cream, 1);
+  color: $darkBlue;
+}
+
+.custom-button:focus {
+  outline: none;
+}
+
+
+// HELPERS
 
 .background-greyBlue {
   background-color: $greyBlue
@@ -82,6 +118,10 @@ header {
 
 .margin-top-bottom {
   margin: 36px 0;
+}
+
+.align-self-center {
+  align-self: center;
 }
 
 // HOME PAGE
@@ -148,10 +188,18 @@ header {
             height: 24px;
             width: 24px;
           }
+
+          .home_about-me_left-container_social-icons:hover {
+            opacity: 50%;
+          }
   
           .home_about-me_left-container_social-icons_email {
             height: 24px;
             width: 28px;
+          }
+
+          .home_about-me_left-container_social-icons_email:hover {
+            opacity: 50%;
           }
         }
       }
@@ -222,13 +270,13 @@ header {
   }
 }
 
-// CS GLOBAL STYLES
+// CASE STUDY GLOBAL STYLES
 
-.home_cs {
+.case-study {
   height: 442px;
   width: 100%;
 
-  .home_cs_container {
+  .case-study_container {
     height: 100%;
     margin: 0 42px;
     display: flex;
@@ -237,7 +285,7 @@ header {
 
 
     // Background img specs
-    .home_cs_container-digiline-background {
+    .case-study_container-digiline-background {
       width: 637px;
       z-index: 1;
       position: absolute;
@@ -245,7 +293,7 @@ header {
       left: 15%;
     }
 
-    .home_cs_container-howl-background {
+    .case-study_container-howl-background {
       width: 100%;
       height: 100%;
       position: absolute;
@@ -253,7 +301,7 @@ header {
       left: -42px;
     }
 
-    .home_cs_container-goodapples-background {
+    .case-study_container-goodapples-background {
       width: 193px;
       height: 207px;
       position: absolute;
@@ -263,7 +311,7 @@ header {
     }
     // end background img specs
 
-    .home_cs_container-1 {
+    .case-study_container-1 {
       width: 40%;
       margin: 36px 0;
       display: flex;
@@ -271,18 +319,18 @@ header {
       justify-content: space-between;
       z-index: 1000;
 
-      .home_cs_container-1_title {
+      .case-study_container-1_title {
         width: 50%;
       }
 
-      .home_cs_container-1_description-container {
+      .case-study_container-1_description-container {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
 
-        .home_cs_container-1_ui-designer {
+        .case-study_container-1_ui-designer {
           font-family: $bebasNeue;
           font-size: 14px;
           letter-spacing: 1px;
@@ -291,7 +339,7 @@ header {
           opacity: 55%;
         }
 
-        .home_cs_container-1_header {
+        .case-study_container-1_header {
           font-family: $archivoBlack;
           letter-spacing: 1px;
           font-size: 30px;
@@ -299,23 +347,16 @@ header {
           color: $cream;
         }
 
-        .home_cs_container-1_description {
+        .case-study_container-1_description {
           font-family: $jost;
           font-size: 14px;
           margin: 0;
           color: $cream;
         }
       }
-
-      .home_cs_container-1_button {
-        height: 36px;
-        width: 130px;
-        border: 3px solid $cream;
-        border-radius: 18px;
-      }
     }
 
-    .home_cs_container-2 {
+    .case-study_container-2 {
       width: 60%;
       margin: 36px 0;
       display: flex;
@@ -323,7 +364,7 @@ header {
       align-items: center;
       z-index: 1000;
 
-      .home_cs_container-2_img {
+      .case-study_container-2_img {
         width: 541px;
         height: 316px;
       }
@@ -333,7 +374,7 @@ header {
 
 // EMAIL FORM
 
-.home_email-form {
+.email-form {
   width: 100%;
   height: 514px;
   background-color: $darkBlue;
@@ -341,24 +382,63 @@ header {
   justify-content: center;
   align-items: center;
 
-  .home_email-form_container {
+  .email-form_container {
     width: 80%;
     height: calc(100% - 64px);
     margin: 32px 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    .home_email-form_container-title {
+    .email-form_container-title {
       font-family: $archivoBlack;
       letter-spacing: 1px;
       font-size: 30px;
       color: $cream;
       margin: 0;
     }
-    .home_email-form_container-text {
+    .email-form_container-text {
       font-family: $jost;
       font-size: 18px;
       color: $cream;
       margin: 12px 0;
+    }
+    .email-form_form {
+      margin: 30px 0 0;
+      width: 80%;
+      height: 330px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .email-form_form-container {
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .email-form_input {
+          height: 35px;
+          padding: 0 12px;
+          border-radius: 6px;
+          font-family: $jost;
+          font-size: 16px;
+          color: rgba($darkBlue, 0.5);
+          background-color: $cream;
+        }
+  
+        .email-form_message-input {
+          height: 90px;
+          padding: 12px 12px;
+          border-radius: 6px;
+          font-family: $jost;
+          font-size: 16px;
+          resize: none;
+          color: rgba($darkBlue, 0.5);
+          background-color: $cream;
+        }
+      }
     }
   }
 }
@@ -367,20 +447,41 @@ header {
 
 footer {
   width: 100%;
-  height: 207px;
+  height: 130px;
   background-color: $cream;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   .footer_container {
-    height: 80px;
-    padding: 32px 10% 62px 10%;
-    .footer_container-line {
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .footer_links {
       margin: 0;
-      width: 100%;
-      border-top: 3px solid $darkBlue 22%;
-    }
-    .footer_container_text-container {
-      height: 100%;
+      width: auto;
+      font-family: $jost;
+      font-size: 16px;
+      color: $darkBlue;
     }
 
+    .footer_dot-container {
+      width: 35px;
+      height: 23px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      .footer_dot {
+        background-color: $darkBlue;
+        width: 5px;
+        height: 5px;
+        border-radius: 2.5px;
+        border: none;
+      }
+    }
   }
 }
