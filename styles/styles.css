@@ -67,14 +67,18 @@ header .navigation .nav-link-container {
   text-align: center;
 }
 
-header .navigation .nav-link-container .nav-links {
+header .navigation .nav-link-container .nav-link {
+  text-decoration: none;
+}
+
+header .navigation .nav-link-container .nav-link .nav-link-text {
   letter-spacing: 1px;
   font-family: "Bebas Neue", cursive;
   color: #efe4d8;
   cursor: pointer;
 }
 
-header .navigation .nav-link-container .nav-links:hover {
+header .navigation .nav-link-container .nav-link .nav-link-text:hover {
   opacity: 50%;
 }
 
@@ -601,5 +605,48 @@ footer .footer_container .footer_dot-container .footer_dot {
   height: 5px;
   border-radius: 2.5px;
   border: none;
+}
+
+.cs-general {
+  width: 100%;
+  height: 442px;
+}
+
+.cs-general .cs-general_container {
+  height: 100%;
+  margin: 0 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cs-general .cs-general_container .cs-general_container-top {
+  width: 100%;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cs-general .cs-general_container .cs-general_container-top .cs-general_title-img {
+  width: 696px;
+}
+
+.cs-general .cs-general_container .cs-general_container-bottom {
+  height: calc(100% - 250px);
+}
+
+.cs-general .cs-general_container .cs-general_container-bottom .cs-general_text-container {
+  width: 65%;
 }
 /*# sourceMappingURL=styles.css.map */

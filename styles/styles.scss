@@ -50,15 +50,19 @@ header {
       width: 25%;
       text-align: center;
 
-      .nav-links {
-        letter-spacing: 1px;
-        font-family: $bebasNeue;
-        color: $cream;
-        cursor: pointer;
-      }
+      .nav-link {
+        text-decoration: none;
 
-      .nav-links:hover {
-        opacity: 50%;
+        .nav-link-text {
+          letter-spacing: 1px;
+          font-family: $bebasNeue;
+          color: $cream;
+          cursor: pointer;
+        }
+  
+        .nav-link-text:hover {
+          opacity: 50%;
+        }
       }
     }
   }
@@ -481,6 +485,43 @@ footer {
         height: 5px;
         border-radius: 2.5px;
         border: none;
+      }
+    }
+  }
+}
+
+
+
+// CASE STUDY PAGE
+
+.cs-general {
+  width: 100%;
+  height: 442px;
+
+  .cs-general_container {
+    height: 100%;
+    margin: 0 42px;
+    display: flex;
+    flex-direction: column;
+
+    .cs-general_container-top {
+      width: 100%;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      .cs-general_title-img {
+        width: 696px;
+      }
+    }
+
+    .cs-general_container-bottom {
+      height: calc(100% - 250px);
+  
+      .cs-general_text-container {
+        // HEIGHT IS BEING ANNOYING
+        width: 65%;
       }
     }
   }
