@@ -141,6 +141,10 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
       align-self: center;
 }
 
+.row-full {
+  width: 100vw;
+}
+
 .home_about-me {
   width: 100%;
   height: 130vh;
@@ -642,11 +646,117 @@ footer .footer_container .footer_dot-container .footer_dot {
   width: 696px;
 }
 
-.cs-general .cs-general_container .cs-general_container-bottom {
-  height: calc(100% - 250px);
+.cs-general .cs-general_container .cs-general_container-bottom .cs-general_text-container {
+  width: 63%;
 }
 
-.cs-general .cs-general_container .cs-general_container-bottom .cs-general_text-container {
-  width: 65%;
+.cs-general .cs-general_container .cs-general_container-bottom .cs-general_text-container .cs-general_text {
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  margin: 24px 0 0 0;
+  color: #efe4d8;
+  opacity: 75%;
+}
+
+.about-me {
+  width: 100%;
+  height: 360px;
+}
+
+.about-me .about-me_container {
+  height: 100%;
+  margin: 0 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-me .about-me_container .about-me_container-top {
+  width: 100%;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-me .about-me_container .about-me_container-top .about-me_title-img {
+  width: 503px;
+}
+
+.about-me .about-me_main-container {
+  height: 957px;
+  margin: 0 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #efe4d8;
+}
+
+.about-me .about-me_main-container .about-me_main-container-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 100px 42px;
+}
+
+.about-me .about-me_main-container .about-me_main-container-top .about-me_main-container-top-left {
+  height: 330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-me .about-me_main-container .about-me_main-container-top .about-me_main-container-top-left .about-me_main-container-top-left_portrait-frame {
+  position: relative;
+  width: 248px;
+  background-color: #2e383f;
+}
+
+.about-me .about-me_main-container .about-me_main-container-top .about-me_main-container-top-left .about-me_main-container-top-left_portrait {
+  position: absolute;
+  height: 330px;
+  width: 248px;
+  z-index: 1000;
+  left: 20px;
+  bottom: 20px;
+}
+
+.about-me .about-me_main-container .about-me_main-container-top .about-me_main-container-top-right .about-me_main-container-top-right-text {
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  margin: 0;
+  color: #1b262f;
+  opacity: 75%;
+}
+
+.about-me .about-me_main-container .about-me_main-container-top .about-me_main-container-top-right .bold {
+  font-weight: medium;
 }
 /*# sourceMappingURL=styles.css.map */

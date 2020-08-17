@@ -128,6 +128,11 @@ header {
   align-self: center;
 }
 
+// div that forces full width
+.row-full {
+  width: 100vw;
+}
+
 // HOME PAGE
 
 .home_about-me {
@@ -517,12 +522,99 @@ footer {
     }
 
     .cs-general_container-bottom {
-      height: calc(100% - 250px);
-  
       .cs-general_text-container {
-        // HEIGHT IS BEING ANNOYING
-        width: 65%;
+        width: 63%;
+
+        .cs-general_text {
+          font-family: $jost;
+          font-size: 20px;
+          margin: 24px 0 0 0;
+          color: $cream;
+          opacity: 75%;
+        }
       }
+    }
+  }
+}
+
+// ABOUT ME PAGE
+
+.about-me {
+  width: 100%;
+  height: 360px;
+
+  .about-me_container {
+    height: 100%;
+    margin: 0 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .about-me_container-top {
+      width: 100%;
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      .about-me_title-img {
+        width: 503px;
+      }
+    }
+  }
+
+  .about-me_main-container {
+    height: 957px;
+    margin: 0 42px;
+    display: flex;
+    flex-direction: column;
+    background-color: $cream;
+
+    .about-me_main-container-top {
+      display: flex;
+      flex-direction: row;
+      margin: 100px 42px;
+
+      .about-me_main-container-top-left {
+        height: 330px;
+        display: flex;
+        justify-content: center;
+        
+        .about-me_main-container-top-left_portrait-frame {
+          position: relative;
+          width: 248px;
+          background-color: $greyBlue;
+        }
+  
+        .about-me_main-container-top-left_portrait {
+          position: absolute;
+          height: 330px;
+          width: 248px;
+          z-index: 1000;
+          left: 20px;
+          bottom: 20px;
+        }
+      }
+
+      .about-me_main-container-top-right {
+        .about-me_main-container-top-right-text {
+          font-family: $jost;
+          font-size: 14px;
+          margin: 0;
+          color: $darkBlue;
+          opacity: 75%;
+        }
+
+        .bold {
+          font-weight: medium;
+        }
+      }
+
+    }
+
+    .about-me_main-container-bottom {
+
     }
   }
 }
