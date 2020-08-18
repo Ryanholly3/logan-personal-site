@@ -113,6 +113,7 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
   font-family: "Bebas Neue", cursive;
   font-size: 14px;
   line-height: 1;
+  position: relative;
   cursor: pointer;
 }
 
@@ -121,9 +122,35 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
   margin-top: 4px;
 }
 
+.custom-button .custom-button-right-arrow {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-left: 14px solid #efe4d8;
+  border-bottom: 7px solid transparent;
+  position: absolute;
+  right: 10px;
+  top: 9px;
+}
+
+.custom-button .custom-button-left-arrow {
+  position: absolute;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  left: 10px;
+  top: 9px;
+  height: 14px;
+}
+
 .custom-button:hover {
   background-color: #efe4d8;
   color: #1b262f;
+}
+
+.custom-button:hover div {
+  border-top: 7px solid transparent;
+  border-left: 14px solid #1b262f;
+  border-bottom: 7px solid transparent;
 }
 
 .custom-button:focus {
@@ -1034,7 +1061,7 @@ footer .footer_container .footer_dot-container .footer_dot {
 
 .digiline .digiline_design {
   width: 100%;
-  height: 2800px;
+  height: 3900px;
   background-color: #1b262f;
 }
 
@@ -1113,7 +1140,7 @@ footer .footer_container .footer_dot-container .footer_dot {
 
 .digiline .digiline_design .digiline_design_high-fidelity-bottom-container {
   width: 100%;
-  margin: 24px 0;
+  margin: 24px 0 72px;
   height: 570px;
   position: relative;
 }
@@ -1166,5 +1193,48 @@ footer .footer_container .footer_dot-container .footer_dot {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.digiline .digiline_design .digiline_design-systems {
+  margin: 0 42px;
+}
+
+.digiline .digiline_design .digiline_design-systems .digiline_design-systems_example-container {
+  height: 331px;
+  width: 100%;
+  margin: 0 0 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.digiline .digiline_design .digiline_design-systems .digiline_design-systems_example-container .digiline_design-systems_example-img {
+  width: 428px;
+}
+
+.digiline .digiline_design .digiline_design-systems .digiline_design_prototype-button-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.digiline .digiline_design .cs-bottom-navigation {
+  margin: 62px 42px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 /*# sourceMappingURL=styles.css.map */
