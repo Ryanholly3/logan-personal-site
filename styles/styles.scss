@@ -825,13 +825,14 @@ footer {
 
   .digiline_design {
     width: 100%;
-    height: 2000px;
+    height: 2800px;
     background-color: $darkBlue;
 
     .digiline_design-container {
-      margin: 78px 42px;
-      height: 100%;
+      margin: 78px 42px 0;
+      
 
+      // Mood Board
       .digiline_design_mood-board-container {
         height: 400px;
         width: 100%;
@@ -844,6 +845,7 @@ footer {
         }
       }
 
+      // Style tile
       .digiline_design_style-tile-container {
         height: 350px;
         width: 100%;
@@ -854,6 +856,81 @@ footer {
         .digiline_design_style-tile-img {
           height: 267px;
         }
+      }
+
+      // High fidelity
+      .digiline_design_high-fidelity-top-container {
+        height: 350px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        .digiline_design_high-fidelity-top-img {
+          width: 254px;
+        }
+
+        .digiline_design_high-fidelity-top-arrow {
+          width: 35px;
+        }
+
+        .digiline_design_high-fidelity-top-text {
+          position: absolute;
+          font-family: $jost;
+          font-size: 14px;
+          color: $cream;
+          margin: 0;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+    .digiline_design_high-fidelity-bottom-container {
+      width: 100%;
+      margin: 24px 0;
+      height: 570px;
+      position: relative;
+
+      .digiline_design_high-fidelity-bottom {
+        height: 100%;
+        margin: 0 42px;
+        width: calc(100% - 84px);
+        position: relative;
+        display: flex;
+        flex-direction: row;
+
+        .digiline_design_high-fidelity-bottom-left {
+          .digiline_design_high-fidelity-bottom-left-logo {
+            padding-top: 102px;
+            width: 312px;
+          }
+        }
+  
+        .digiline_design_high-fidelity-bottom-right {
+          width: calc(100% - 312px);
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+
+          .digiline_design_high-fidelity-bottom-right-desktop {
+            width: 572px;
+          }
+        }
+  
+        .digiline_design_high-fidelity-bottom-laptop {
+          position: absolute;
+          width: 541px;
+          bottom: 0;
+          left: 51px;
+        }
+      }
+
+      .digiline_design_high-fidelity-bottom-container_background {
+        width: 600px;
+        position: absolute;
+        top: 0;
+        left: 0;
       }
     }
   }
