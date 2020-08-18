@@ -10,6 +10,7 @@ body {
 }
 
 body .page-container {
+  width: 100vw;
   max-width: 1024px;
 }
 
@@ -82,6 +83,26 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
   opacity: 50%;
 }
 
+.common-container {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 56px;
+}
+
+.common-container .common-container_title-text {
+  margin: 24px 0;
+  font-family: "Bebas Neue", cursive;
+  font-size: 36px;
+  color: #efe4d8;
+}
+
+.common-container .common-container_paragraph-text {
+  margin: 0 0 0 48px;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  color: #efe4d8;
+}
+
 .custom-button {
   height: 36px;
   width: 128px;
@@ -139,10 +160,6 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-}
-
-.row-full {
-  width: 100vw;
 }
 
 .home_about-me {
@@ -699,8 +716,7 @@ footer .footer_container .footer_dot-container .footer_dot {
 }
 
 .about-me .about-me_main-container {
-  height: 957px;
-  margin: 0 42px;
+  height: 920px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -781,5 +797,285 @@ footer .footer_container .footer_dot-container .footer_dot {
 .about-me .about-me_main-container .about-me_main-container-bottom .about-me_main-container-bottom-img {
   width: 258px;
   height: 172px;
+}
+
+.digiline {
+  width: 100%;
+}
+
+.digiline .digiline_container {
+  height: 100%;
+  margin: 0 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.digiline .digiline_container .digiline_container-top {
+  width: 100%;
+  height: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.digiline .digiline_container .digiline_container-top .digiline_title-img {
+  width: 503px;
+}
+
+.digiline .digiline_desktops-container {
+  width: 100%;
+  height: 442px;
+  position: relative;
+  background-color: #2e383f;
+}
+
+.digiline .digiline_desktops-container .digiline_desktops-container_background-boxes-1 {
+  width: 225px;
+  position: absolute;
+  z-index: 1;
+  top: 12px;
+}
+
+.digiline .digiline_desktops-container .digiline_desktops-container_background-boxes-2 {
+  width: 225px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 12px;
+}
+
+.digiline .digiline_desktops-container .digiline_desktops-inner-container {
+  height: 100%;
+  margin: 0 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.digiline .digiline_desktops-container .digiline_desktops-inner-container .digiline_desktops-container_laptop {
+  width: 560px;
+  position: absolute;
+  z-index: 3;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 48px;
+}
+
+.digiline .digiline_desktops-container .digiline_desktops-inner-container .digiline_desktops-inner-container_desktops {
+  height: 240px;
+  z-index: 2;
+}
+
+.digiline .digiline_summary-container {
+  height: 740px;
+  margin: 0 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.digiline .digiline_summary-container .digiline_summary-container_title-container {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.digiline .digiline_summary-container .digiline_summary-container_title-container .digiline_summary-container_title-text {
+  font-family: "Bebas Neue", cursive;
+  font-size: 36px;
+  color: #efe4d8;
+  margin: 0;
+}
+
+.digiline .digiline_summary-container .digiline_summary-container_line {
+  width: 80%;
+  margin: 0 auto;
+  opacity: 75%;
+}
+
+.digiline .digiline_summary-container .digiline_summary-container_tool-date-team-container {
+  width: 95%;
+  margin: 48px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.digiline .digiline_summary-container .digiline_summary-container_tool-date-team-container .digiline_summary-container_tdt-container {
+  width: 170px;
+  height: 100%;
+  text-align: left;
+}
+
+.digiline .digiline_summary-container .digiline_summary-container_tool-date-team-container .digiline_summary-container_tdt-container .digiline_summary-container_tdt-title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 16px;
+  color: #efe4d8;
+  margin: 0 0 12px;
+}
+
+.digiline .digiline_summary-container .digiline_summary-container_tool-date-team-container .digiline_summary-container_tdt-container .digiline_summary-container_tdt-text {
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  color: #efe4d8;
+  margin: 0;
+  opacity: 75%;
+}
+
+.digiline .digiline_competitive-analysis {
+  width: 100%;
+  height: 442px;
+  background-color: #efe4d8;
+}
+
+.digiline .digiline_competitive-analysis .digiline_competitive-analysis_inner-container {
+  height: 100%;
+  margin: 0 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+}
+
+.digiline .digiline_competitive-analysis .digiline_competitive-analysis_inner-container .digiline_competitive-analysis_inner-container-text {
+  margin: 0;
+  position: absolute;
+  font-family: "Jost", sans-serif;
+  color: #1b262f;
+  font-size: 14px;
+  bottom: 8px;
+  left: 0px;
+}
+
+.digiline .digiline_competitive-analysis .digiline_competitive-analysis_inner-container .digiline_competitive-analysis_inner-container_background-img {
+  padding-top: 68px;
+  width: 460px;
+}
+
+.digiline .digiline_competitive-analysis .digiline_competitive-analysis_inner-container .digiline_competitive-analysis_inner-container_front-img {
+  width: 460px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 56px;
+}
+
+.digiline .digiline_design {
+  width: 100%;
+  height: 2000px;
+  background-color: #1b262f;
+}
+
+.digiline .digiline_design .digiline_design-container {
+  margin: 78px 42px;
+  height: 100%;
+}
+
+.digiline .digiline_design .digiline_design-container .digiline_design_mood-board-container {
+  height: 400px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.digiline .digiline_design .digiline_design-container .digiline_design_mood-board-container .digiline_design_mood-board-img {
+  height: 323px;
+}
+
+.digiline .digiline_design .digiline_design-container .digiline_design_style-tile-container {
+  height: 350px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.digiline .digiline_design .digiline_design-container .digiline_design_style-tile-container .digiline_design_style-tile-img {
+  height: 267px;
 }
 /*# sourceMappingURL=styles.css.map */
