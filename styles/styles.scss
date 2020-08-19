@@ -48,7 +48,7 @@ header {
     flex-direction: row;
 
     .nav-link-container {
-      width: 25%;
+      width: calc(100% / 3);
       text-align: center;
 
       .nav-link {
@@ -90,6 +90,65 @@ header {
   }
 }
 
+.common-summary-container {
+  height: 740px;
+  margin: 0 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  .common-summary-container_title-container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .common-summary-container_title-text {
+      font-family: $bebasNeue;
+      font-size: 36px;
+      color: $cream;
+      margin: 0;
+    }
+  }
+  .common-summary-container_line {
+    width: 80%;
+    margin: 0 auto;
+    opacity: 75%;
+  }
+
+  .common-summary-container_tool-date-team-container {
+    width: 95%;
+    margin: 48px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .common-summary-container_tdt-container {
+      width: 170px;
+      height: 100%;
+      text-align: left;
+
+      .common-summary-container_tdt-title {
+        font-family: $bebasNeue;
+        font-size: 16px;
+        color: $cream;
+        margin: 0 0 12px;
+      }
+
+      .common-summary-container_tdt-text {
+        font-family: $jost;
+        font-size: 14px;
+        color: $cream;
+        margin: 0;
+        opacity: 75%;
+      }
+    }
+  }
+}
+
 
 .custom-button {
   height: 36px;
@@ -119,11 +178,15 @@ header {
     top: 9px;
   }
   .custom-button-left-arrow {
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-left: 14px solid $cream;
+    border-bottom: 7px solid transparent;
     position: absolute;
     transform: rotate(180deg);
     left: 10px;
     top: 9px;
-    height: 14px;
   }
 }
 
@@ -171,6 +234,11 @@ header {
 
 .align-self-center {
   align-self: center;
+}
+
+.height-24px {
+  height: 24px;
+  opacity: 75%;
 }
 
 
@@ -228,7 +296,7 @@ header {
         }
   
         .home_about-me_left-container_social-container {
-          width: 50%;
+          width: 80%;
           height: 32px;
           display: flex;
           flex-direction: row;
@@ -497,18 +565,23 @@ header {
 
 footer {
   width: 100%;
-  height: 130px;
+  height: 150px;
   background-color: $cream;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   .footer_container {
-    height: auto;
-    width: 50%;
+    height: 28px;
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+    a {
+      text-decoration: none;
+    }
 
     .footer_links {
       margin: 0;
@@ -516,6 +589,15 @@ footer {
       font-family: $jost;
       font-size: 16px;
       color: $darkBlue;
+    }
+
+    .footer_resume-link {
+      margin: 0;
+      width: auto;
+      font-family: $jost;
+      font-size: 16px;
+      color: $darkBlue;
+      text-decoration: underline;
     }
 
     .footer_dot-container {
@@ -747,65 +829,6 @@ footer {
     }
   }
 
-  .digiline_summary-container {
-    height: 740px;
-    margin: 0 42px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-
-    .digiline_summary-container_title-container {
-      width: 100%;
-      height: 100px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      .digiline_summary-container_title-text {
-        font-family: $bebasNeue;
-        font-size: 36px;
-        color: $cream;
-        margin: 0;
-      }
-    }
-    .digiline_summary-container_line {
-      width: 80%;
-      margin: 0 auto;
-      opacity: 75%;
-    }
-
-    .digiline_summary-container_tool-date-team-container {
-      width: 95%;
-      margin: 48px 0;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-
-      .digiline_summary-container_tdt-container {
-        width: 170px;
-        height: 100%;
-        text-align: left;
-
-        .digiline_summary-container_tdt-title {
-          font-family: $bebasNeue;
-          font-size: 16px;
-          color: $cream;
-          margin: 0 0 12px;
-        }
-
-        .digiline_summary-container_tdt-text {
-          font-family: $jost;
-          font-size: 14px;
-          color: $cream;
-          margin: 0;
-          opacity: 75%;
-        }
-      }
-    }
-  }
-
   .digiline_competitive-analysis {
     width: 100%;
     height: 442px;
@@ -986,5 +1009,220 @@ footer {
       display: flex;
       justify-content: flex-end;
     }
+  }
+}
+
+
+// HOWL PAGE
+
+.howl {
+  width: 100%;
+
+  .howl_container {
+    height: 100%;
+    margin: 0 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .howl_container-top {
+      width: 100%;
+      height: 360px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      .howl_title-img {
+        width: 503px;
+      }
+    }
+  }
+
+  .howl_background-container {
+    width: 100%;
+    height: 442px;
+    background-image: url("../assets/CS_howl/Rectangle@3x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .howl_wireframe-competitive-analysis-container {
+    height: 100%;
+    margin: 0 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .howl_wireframe-img {
+      width: 100%;
+    }
+
+    .howl_wireframe-text {
+      margin-bottom: 36px;
+      width: 100%;
+      font-family: $jost;
+      font-size: 14px;
+      color: $cream;
+      opacity: 75%;
+    }
+  }
+
+  .howl_design-container {
+    margin: 0 42px;
+
+    .howl_design_logo-iterations-container {
+      width: 100%;
+      height: 375px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .howl_design_logo-iterations-img {
+        height: 100%;
+      }
+    }
+    .howl_logo-iteration-text {
+      margin-bottom: 36px;
+      width: 100%;
+      font-family: $jost;
+      font-size: 14px;
+      color: $cream;
+      opacity: 75%;
+    }
+
+    .howl_logo-final-container {
+      width: 100%;
+      margin-bottom: 68px;
+      display: flex;
+      justify-content: center;
+
+      .howl_logo-final-inner-container {
+        width: 580px;
+
+        .howl_logo-final-inner-img {
+          width: 100%;
+          margin-top: 24px;
+        }
+      }
+    }
+
+    .howl_design_mood-boards-container {
+      width: 100%;
+      margin-bottom: 68px;
+      height: 205px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  
+      .howl_design_mood-board-img {
+        height: 100%;
+      }
+    }
+
+    .howl_design_style-tiles-container {
+      width: 100%;
+      margin-bottom: 68px;
+      height: 163px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .howl_design_style-tiles-img {
+        height: 100%;
+      }
+    }
+
+    .howl_design_high-fidelity-container {
+      width: 100%;
+      height: 569px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .howl_design_high-fidelity-img {
+        height: 100%;
+      }
+    }
+    .howl_design_high-fidelity-text {
+      margin-bottom: 36px;
+      width: 100%;
+      font-family: $jost;
+      font-size: 14px;
+      color: $cream;
+      opacity: 75%;
+    }
+  }
+
+  .howl_final-mockups-container {
+    height: 695px;
+    width: 100%;
+    margin-bottom: 68px;
+    position: relative;
+
+    .howl_final-mockups_background-lines {
+      width: 100%;
+    }
+
+    .howl_final-mockups_desktop {
+      z-index: 1;
+      position: absolute;
+      width: 695px;
+      top: 55px;
+      right: 96px;
+    }
+
+    .howl_final-mockups_phone1{
+      z-index: 3;
+      position: absolute;
+      width: 195px;
+      bottom: 36px;
+      left: 59px;
+    }
+    .howl_final-mockups_phone2{
+      z-index: 2;
+      position: absolute;
+      width: 195px;
+      bottom: 36px;
+      left: 182px;
+    }
+    .how_final-mockups_text {
+      position: absolute;
+      width: 350px;
+      bottom: 6px;
+      left: 74px;
+      font-family: $jost;
+      font-size: 14px;
+      color: $cream;
+      opacity: 75%;
+    }
+  }
+
+  .howl_design-systems-container {
+    margin: 0 42px 68px;
+
+    .howl_design-systems_colors-container {
+      width: 100%;
+      margin: 0 0 68px;
+      display: flex;
+      justify-content: center;
+
+      .howl_design-systems_colors-img {
+        width: 609px;
+      }
+    }
+  }
+
+  .howl_design_prototype-button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cs-bottom-navigation {
+    margin: 62px 42px 0;
+    display: flex;
+    justify-content: flex-start;
   }
 }
