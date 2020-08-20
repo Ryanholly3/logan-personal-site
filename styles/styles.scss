@@ -23,8 +23,9 @@ header {
 
 
   .name-logo {
-    width: 35%;
-    padding: 12px;
+    padding: 12px 0;
+    margin-left: 42px;
+    width: calc(35% - 42px);
     display: flex;
     flex-direction: row;
 
@@ -42,8 +43,9 @@ header {
   }
 
   .navigation {
-    width: 65%;
-    padding: 12px;
+    padding: 12px 0;
+    margin-right: 42px;
+    width: calc(65% - 42px);
     display: flex;
     flex-direction: row;
 
@@ -55,6 +57,7 @@ header {
         text-decoration: none;
 
         .nav-link-text {
+          text-align: right;
           letter-spacing: 1px;
           font-family: $bebasNeue;
           color: $cream;
@@ -154,7 +157,7 @@ header {
   height: 36px;
   width: 128px;
   border: 2px solid $cream;
-  border-radius: 16px;
+  border-radius: 18px;
   color: $cream;
   background-color: rgba($cream, 0);
   font-family: $bebasNeue;
@@ -206,6 +209,30 @@ header {
 }
 
 
+/// NO HOVER, STATIC BUTTON
+
+.custom-button2 {
+  height: 36px;
+  width: 128px;
+  border: 2px solid $cream;
+  border-radius: 18px;
+  color: $cream;
+  background-color: rgba($cream, 0);
+  font-family: $bebasNeue;
+  font-size: 14px;
+  line-height: 1;
+  position: relative;
+
+  .custom-button2-text {
+    display: block;
+    margin-top: 4px;
+  }
+}
+
+.custom-button2:focus {
+  outline: none;
+}
+
 // HELPERS
 
 .background-greyBlue {
@@ -241,12 +268,21 @@ header {
   opacity: 75%;
 }
 
+.no-text-decoration {
+  text-decoration: none;
+}
+
+.opacity-75 {
+  opacity: 75%;
+}
+
+
 
 // HOME PAGE
 
 .home_about-me {
   width: 100%;
-  height: 130vh;
+  height: 1000px;
   display: flex;
   flex-direction: row;
   background-image: url("../assets/homePageCaseStudy/BackgroundImage.png");
@@ -268,7 +304,6 @@ header {
       .home_about-me_left-container {
         width: 50%;
         height: 500px;
-        padding: 12px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -277,7 +312,7 @@ header {
         .home_about-me_left-container_title {
           font-family: $archivoBlack;
           letter-spacing: 1px;
-          font-size: 40px;
+          font-size: 44px;
           color: $cream;
         }
   
@@ -296,7 +331,7 @@ header {
         }
   
         .home_about-me_left-container_social-container {
-          width: 80%;
+          width: 66%;
           height: 32px;
           display: flex;
           flex-direction: row;
@@ -325,23 +360,23 @@ header {
       .home_about-me_right-container {
         width: 50%;
         height: 500px;
-        padding: 12px;
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
+        position: relative;
         
         .home_about-me_right_portrait-frame {
-          position: relative;
+          position: absolute;
           width: 398px;
+          height: 500px;
+          right: 20px;
+          bottom: -20px;
           background-color: $greyBlue;
         }
   
         .home_about-me_right_portrait {
-          position: absolute;
           height: 500px;
           width: 398px;
           z-index: 1000;
-          left: 20px;
-          bottom: 20px;
         }
       }
     }
@@ -365,7 +400,7 @@ header {
       .home_about-me_bottom-container_text {
         margin: 0;
         font-family: $jost;
-        font-size: 21px;
+        font-size: 18px;
         color: $cream;
         opacity: 75%;
       }
@@ -374,15 +409,21 @@ header {
     .home_about-me_bottom_continue-reading-container {
       width: 100%;
       height: 32px;
-      text-align: right;
+      display: flex;
+      justify-content: flex-end;
 
       .home_about-me_bottom_continue-reading-text {
+        width: 140px;
         margin: 12px 12px 0 0;
         font-family: $jost;
-        font-size: 21px;
+        font-size: 18px;
         color: $cream;
         opacity: 75%;
         text-decoration: underline;
+      }
+
+      .home_about-me_bottom_continue-reading-text:hover {
+        opacity: 50%;
       }
     }
   }
@@ -443,7 +484,7 @@ header {
 
       .case-study_container-1_description-container {
         width: 100%;
-        height: 100%;
+        height: 280px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -583,6 +624,14 @@ footer {
       text-decoration: none;
     }
 
+    .footer_text {
+      margin: 0;
+      width: auto;
+      font-family: $jost;
+      font-size: 16px;
+      color: $darkBlue;
+    }
+
     .footer_links {
       margin: 0;
       width: auto;
@@ -598,6 +647,11 @@ footer {
       font-size: 16px;
       color: $darkBlue;
       text-decoration: underline;
+    }
+
+    .footer_links:hover,
+    .footer_resume-link:hover {
+      opacity: 75%;
     }
 
     .footer_dot-container {
@@ -631,6 +685,7 @@ footer {
     margin: 0 42px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
     .cs-general_container-top {
       width: 100%;
@@ -640,7 +695,7 @@ footer {
       align-items: center;
   
       .cs-general_title-img {
-        width: 696px;
+        height: 120px;
       }
     }
 
@@ -650,7 +705,7 @@ footer {
 
         .cs-general_text {
           font-family: $jost;
-          font-size: 20px;
+          font-size: 18px;
           margin: 24px 0 0 0;
           color: $cream;
           opacity: 75%;
@@ -681,7 +736,7 @@ footer {
       align-items: center;
   
       .about-me_title-img {
-        width: 503px;
+        height: 120px;
       }
     }
   }
@@ -732,7 +787,7 @@ footer {
         }
 
         .bold {
-          font-weight: bold;
+          font-weight: 600;
         }
       }
 
@@ -776,7 +831,7 @@ footer {
       align-items: center;
   
       .digiline_title-img {
-        width: 503px;
+        height: 120px;
       }
     }
   }
@@ -1034,7 +1089,7 @@ footer {
       align-items: center;
   
       .howl_title-img {
-        width: 503px;
+        height: 120px;
       }
     }
   }

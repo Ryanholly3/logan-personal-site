@@ -28,8 +28,9 @@ header {
 }
 
 header .name-logo {
-  width: 35%;
-  padding: 12px;
+  padding: 12px 0;
+  margin-left: 42px;
+  width: calc(35% - 42px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,8 +53,9 @@ header .name-logo .name {
 }
 
 header .navigation {
-  width: 65%;
-  padding: 12px;
+  padding: 12px 0;
+  margin-right: 42px;
+  width: calc(65% - 42px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,6 +75,7 @@ header .navigation .nav-link-container .nav-link {
 }
 
 header .navigation .nav-link-container .nav-link .nav-link-text {
+  text-align: right;
   letter-spacing: 1px;
   font-family: "Bebas Neue", cursive;
   color: #efe4d8;
@@ -191,7 +194,7 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
   height: 36px;
   width: 128px;
   border: 2px solid #efe4d8;
-  border-radius: 16px;
+  border-radius: 18px;
   color: #efe4d8;
   background-color: rgba(239, 228, 216, 0);
   font-family: "Bebas Neue", cursive;
@@ -245,6 +248,28 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
   outline: none;
 }
 
+.custom-button2 {
+  height: 36px;
+  width: 128px;
+  border: 2px solid #efe4d8;
+  border-radius: 18px;
+  color: #efe4d8;
+  background-color: rgba(239, 228, 216, 0);
+  font-family: "Bebas Neue", cursive;
+  font-size: 14px;
+  line-height: 1;
+  position: relative;
+}
+
+.custom-button2 .custom-button2-text {
+  display: block;
+  margin-top: 4px;
+}
+
+.custom-button2:focus {
+  outline: none;
+}
+
 .background-greyBlue {
   background-color: #2e383f;
 }
@@ -282,9 +307,17 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
   opacity: 75%;
 }
 
+.no-text-decoration {
+  text-decoration: none;
+}
+
+.opacity-75 {
+  opacity: 75%;
+}
+
 .home_about-me {
   width: 100%;
-  height: 130vh;
+  height: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,7 +357,6 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
 .home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container {
   width: 50%;
   height: 500px;
-  padding: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,7 +375,7 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
 .home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container .home_about-me_left-container_title {
   font-family: "Archivo Black", sans-serif;
   letter-spacing: 1px;
-  font-size: 40px;
+  font-size: 44px;
   color: #efe4d8;
 }
 
@@ -362,7 +394,7 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
 }
 
 .home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container .home_about-me_left-container_social-container {
-  width: 80%;
+  width: 66%;
   height: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -397,28 +429,28 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
 .home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_right-container {
   width: 50%;
   height: 500px;
-  padding: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
 }
 
 .home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_right-container .home_about-me_right_portrait-frame {
-  position: relative;
+  position: absolute;
   width: 398px;
+  height: 500px;
+  right: 20px;
+  bottom: -20px;
   background-color: #2e383f;
 }
 
 .home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_right-container .home_about-me_right_portrait {
-  position: absolute;
   height: 500px;
   width: 398px;
   z-index: 1000;
-  left: 20px;
-  bottom: 20px;
 }
 
 .home_about-me .home_about-me_container .home_about-me_bottom-container {
@@ -448,7 +480,7 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
 .home_about-me .home_about-me_container .home_about-me_bottom-container .home_about-me_bottom-container_text {
   margin: 0;
   font-family: "Jost", sans-serif;
-  font-size: 21px;
+  font-size: 18px;
   color: #efe4d8;
   opacity: 75%;
 }
@@ -456,16 +488,26 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
 .home_about-me .home_about-me_container .home_about-me_bottom_continue-reading-container {
   width: 100%;
   height: 32px;
-  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .home_about-me .home_about-me_container .home_about-me_bottom_continue-reading-container .home_about-me_bottom_continue-reading-text {
+  width: 140px;
   margin: 12px 12px 0 0;
   font-family: "Jost", sans-serif;
-  font-size: 21px;
+  font-size: 18px;
   color: #efe4d8;
   opacity: 75%;
   text-decoration: underline;
+}
+
+.home_about-me .home_about-me_container .home_about-me_bottom_continue-reading-container .home_about-me_bottom_continue-reading-text:hover {
+  opacity: 50%;
 }
 
 .case-study {
@@ -533,7 +575,7 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
 
 .case-study .case-study_container .case-study_container-1 .case-study_container-1_description-container {
   width: 100%;
-  height: 100%;
+  height: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -726,6 +768,14 @@ footer .footer_container a {
   text-decoration: none;
 }
 
+footer .footer_container .footer_text {
+  margin: 0;
+  width: auto;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  color: #1b262f;
+}
+
 footer .footer_container .footer_links {
   margin: 0;
   width: auto;
@@ -741,6 +791,11 @@ footer .footer_container .footer_resume-link {
   font-size: 16px;
   color: #1b262f;
   text-decoration: underline;
+}
+
+footer .footer_container .footer_links:hover,
+footer .footer_container .footer_resume-link:hover {
+  opacity: 75%;
 }
 
 footer .footer_container .footer_dot-container {
@@ -780,6 +835,9 @@ footer .footer_container .footer_dot-container .footer_dot {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cs-general .cs-general_container .cs-general_container-top {
@@ -797,7 +855,7 @@ footer .footer_container .footer_dot-container .footer_dot {
 }
 
 .cs-general .cs-general_container .cs-general_container-top .cs-general_title-img {
-  width: 696px;
+  height: 120px;
 }
 
 .cs-general .cs-general_container .cs-general_container-bottom .cs-general_text-container {
@@ -806,7 +864,7 @@ footer .footer_container .footer_dot-container .footer_dot {
 
 .cs-general .cs-general_container .cs-general_container-bottom .cs-general_text-container .cs-general_text {
   font-family: "Jost", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   margin: 24px 0 0 0;
   color: #efe4d8;
   opacity: 75%;
@@ -849,7 +907,7 @@ footer .footer_container .footer_dot-container .footer_dot {
 }
 
 .about-me .about-me_container .about-me_container-top .about-me_title-img {
-  width: 503px;
+  height: 120px;
 }
 
 .about-me .about-me_main-container {
@@ -916,7 +974,7 @@ footer .footer_container .footer_dot-container .footer_dot {
 }
 
 .about-me .about-me_main-container .about-me_main-container-top .about-me_main-container-top-right .bold {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .about-me .about-me_main-container .about-me_main-container-bottom {
@@ -973,7 +1031,7 @@ footer .footer_container .footer_dot-container .footer_dot {
 }
 
 .digiline .digiline_container .digiline_container-top .digiline_title-img {
-  width: 503px;
+  height: 120px;
 }
 
 .digiline .digiline_desktops-container {
@@ -1301,7 +1359,7 @@ footer .footer_container .footer_dot-container .footer_dot {
 }
 
 .howl .howl_container .howl_container-top .howl_title-img {
-  width: 503px;
+  height: 120px;
 }
 
 .howl .howl_background-container {
