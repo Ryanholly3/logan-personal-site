@@ -130,7 +130,7 @@ header {
     align-items: center;
 
     .common-summary-container_tdt-container {
-      width: 170px;
+      width: 100px;
       height: 100%;
       text-align: left;
 
@@ -251,6 +251,10 @@ header {
   text-align: right;
 }
 
+.text-align-center {
+  text-align: center;
+}
+
 .align-items-flex-end {
   align-items: flex-end
 }
@@ -274,6 +278,10 @@ header {
 
 .opacity-75 {
   opacity: 75%;
+}
+
+.width-170 {
+  width: 170px !important;
 }
 
 
@@ -1018,6 +1026,7 @@ footer {
 
           .digiline_design_high-fidelity-bottom-right-desktop {
             width: 572px;
+            z-index: 5;
           }
         }
   
@@ -1026,6 +1035,7 @@ footer {
           width: 541px;
           bottom: 0;
           left: 51px;
+          z-index: 6;
         }
       }
 
