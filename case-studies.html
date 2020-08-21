@@ -69,6 +69,10 @@
        
         <!-- CS DIGILINE -->
         <section class='case-study background-greyBlue'>
+          <img src='./assets/CS_digiline/Triangle@3x.png'class='triangle-right'/>
+          <img src='./assets/CS_digiline/Triangle@3x.png' id='t1' class='triangle-right'/>
+          <img src='./assets/CS_digiline/Triangle@3x.png'id='t2' class='triangle-right'/>
+          <img src='./assets/CS_digiline/Triangle@3x.png'id='t3' class='triangle-right'/>
           <div class='case-study_container'>
             <img
               src='./assets/shared/styleItems/Digilineboxesstyle@3x.png'
@@ -175,6 +179,10 @@
         </section>
         
         <section class='email-form'>
+          <img src='./assets/CS_digiline/Triangle@3x.png'class='triangle-right'/>
+          <img src='./assets/CS_digiline/Triangle@3x.png' id='t4' class='triangle-right'/>
+          <img src='./assets/CS_digiline/Triangle@3x.png'id='t5' class='triangle-right'/>
+          <img src='./assets/CS_digiline/Triangle@3x.png'id='t6' class='triangle-right'/>
           <div class='email-form_container'>
             <p class='email-form_container-title'>Want to chat? Let's grab coffee or a beer...</p>
             <p class='email-form_container-text'>(If you're into that kind of thing)</p>
@@ -247,4 +255,24 @@
         </footer>
       </div>
     </body>
+    <script>
+      let triggered1 = false
+      let triggered2 = false
+
+      window.onscroll = (e) => {
+        if (window.scrollY > 5 && triggered1 === false){
+          document.getElementById('t1').className += " t1"
+          document.getElementById('t2').className += " t2"
+          document.getElementById('t3').className += " t3"
+          triggered1 = true
+        }
+
+        if (window.scrollY > 1240 && triggered2 === false){
+          document.getElementById('t4').className += " t1"
+          document.getElementById('t5').className += " t2"
+          document.getElementById('t6').className += " t3"
+          triggered2 = true
+        }
+      }
+    </script>
 </html>

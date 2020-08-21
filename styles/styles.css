@@ -323,6 +323,107 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
   width: 170px !important;
 }
 
+.triangle-right {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -70px;
+  right: 22px;
+}
+
+.triangle-left {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -70px;
+  left: 22px;
+}
+
+.t1 {
+  -webkit-animation: drop1 0.7s ease 1 normal forwards;
+  animation: drop1 0.7s ease 1 normal forwards;
+}
+
+.t2 {
+  -webkit-animation: drop1 0.7s ease 1 normal forwards;
+  animation: drop2 0.7s ease 1 normal forwards;
+}
+
+.t3 {
+  -webkit-animation: drop1 0.7s ease 1 normal forwards;
+  animation: drop3 0.7s ease 1 normal forwards;
+}
+
+@-webkit-keyframes drop1 {
+  0% {
+    -webkit-transform: rotate(90deg) translate(0, 0);
+            transform: rotate(90deg) translate(0, 0);
+  }
+  100% {
+    -webkit-transform: rotate(90deg) translate(40px, 0);
+            transform: rotate(90deg) translate(40px, 0);
+  }
+}
+
+@keyframes drop1 {
+  0% {
+    -webkit-transform: rotate(90deg) translate(0, 0);
+            transform: rotate(90deg) translate(0, 0);
+  }
+  100% {
+    -webkit-transform: rotate(90deg) translate(40px, 0);
+            transform: rotate(90deg) translate(40px, 0);
+  }
+}
+
+@-webkit-keyframes drop2 {
+  0% {
+    -webkit-transform: rotate(90deg) translate(0, 0);
+            transform: rotate(90deg) translate(0, 0);
+  }
+  100% {
+    -webkit-transform: rotate(90deg) translate(80px, 0);
+            transform: rotate(90deg) translate(80px, 0);
+  }
+}
+
+@keyframes drop2 {
+  0% {
+    -webkit-transform: rotate(90deg) translate(0, 0);
+            transform: rotate(90deg) translate(0, 0);
+  }
+  100% {
+    -webkit-transform: rotate(90deg) translate(80px, 0);
+            transform: rotate(90deg) translate(80px, 0);
+  }
+}
+
+@-webkit-keyframes drop3 {
+  0% {
+    -webkit-transform: rotate(90deg) translate(0, 0);
+            transform: rotate(90deg) translate(0, 0);
+  }
+  100% {
+    -webkit-transform: rotate(90deg) translate(120px, 0);
+            transform: rotate(90deg) translate(120px, 0);
+  }
+}
+
+@keyframes drop3 {
+  0% {
+    -webkit-transform: rotate(90deg) translate(0, 0);
+            transform: rotate(90deg) translate(0, 0);
+  }
+  100% {
+    -webkit-transform: rotate(90deg) translate(120px, 0);
+            transform: rotate(90deg) translate(120px, 0);
+  }
+}
+
 .home_about-me {
   width: 100%;
   height: 1000px;
@@ -521,6 +622,7 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
 .case-study {
   height: 442px;
   width: 100%;
+  position: relative;
 }
 
 .case-study .case-study_container {
@@ -653,6 +755,7 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .email-form .email-form_container {
@@ -928,6 +1031,7 @@ footer .footer_container .footer_dot-container .footer_dot {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #efe4d8;
+  position: relative;
 }
 
 .about-me .about-me_main-container .about-me_main-container-top {

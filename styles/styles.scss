@@ -284,6 +284,59 @@ header {
   width: 170px !important;
 }
 
+// Triangle Animations 
+
+.triangle-right {
+  transform: rotate(90deg);
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -70px;
+  right: 22px;
+}
+
+.triangle-left {
+  transform: rotate(90deg);
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -70px;
+  left: 22px;
+}
+
+.t1 {
+  -webkit-animation:
+    drop1 0.7s ease 1 normal forwards;
+  animation: 
+    drop1 0.7s ease 1 normal forwards;
+}
+.t2 {
+  -webkit-animation:
+    drop1 0.7s ease 1 normal forwards;
+  animation: 
+    drop2 0.7s ease 1 normal forwards;
+}
+.t3 {
+  -webkit-animation:
+    drop1 0.7s ease 1 normal forwards;
+  animation: 
+    drop3 0.7s ease 1 normal forwards;
+}
+
+@keyframes drop1 {
+  0% {transform: rotate(90deg) translate(0, 0);}  
+  100% { transform: rotate(90deg) translate(40px, 0);}
+}
+@keyframes drop2 {
+  0% {transform: rotate(90deg) translate(0, 0);}  
+  100% { transform: rotate(90deg) translate(80px, 0);}
+}
+@keyframes drop3 {
+  0% {transform: rotate(90deg) translate(0, 0);}  
+  100% { transform: rotate(90deg) translate(120px, 0);}
+}
+
+
 
 
 // HOME PAGE
@@ -442,6 +495,8 @@ header {
 .case-study {
   height: 442px;
   width: 100%;
+  position: relative;
+  // relative for triangles
 
   .case-study_container {
     height: 100%;
@@ -548,6 +603,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  // relative for triangle animation
 
   .email-form_container {
     width: 80%;
@@ -754,6 +811,8 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: $cream;
+    position: relative;
+    // relative for triangle positioning
 
     .about-me_main-container-top {
       display: flex;
