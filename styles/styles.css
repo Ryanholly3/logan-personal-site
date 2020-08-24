@@ -11,6 +11,7 @@ body {
 
 body .page-container {
   width: 100vw;
+  min-width: 1024px;
   max-width: 1024px;
 }
 
