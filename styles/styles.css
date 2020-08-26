@@ -11,7 +11,6 @@ body {
 
 body .page-container {
   width: 100vw;
-  min-width: 1024px;
   max-width: 1024px;
 }
 
@@ -455,6 +454,7 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
 
 .home_about-me .home_about-me_container .home_about-me_top-container {
   width: 100%;
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -466,7 +466,7 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
 
 .home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container {
   width: 50%;
-  height: 500px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -538,7 +538,7 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
 
 .home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_right-container {
   width: 50%;
-  height: 500px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -550,16 +550,20 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
 
 .home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_right-container .home_about-me_right_portrait-frame {
   position: absolute;
-  width: 398px;
-  height: 500px;
+  width: 90%;
+  height: 100%;
   right: 20px;
   bottom: -20px;
   background-color: #2e383f;
 }
 
 .home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_right-container .home_about-me_right_portrait {
-  height: 500px;
-  width: 398px;
+  background-image: url("../assets/homePageCaseStudy/me.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 90%;
   z-index: 1000;
 }
 
@@ -640,7 +644,7 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
 }
 
 .case-study .case-study_container .case-study_container-digiline-background {
-  width: 637px;
+  width: 62%;
   z-index: 1;
   position: absolute;
   bottom: 24px;
@@ -648,7 +652,11 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
 }
 
 .case-study .case-study_container .case-study_container-howl-background {
-  width: 100%;
+  background-image: url("../assets/homePageCaseStudy/home&casestudypage@3x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  width: calc(100% + 84px);
   height: 100%;
   position: absolute;
   z-index: 1;
@@ -656,8 +664,7 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
 }
 
 .case-study .case-study_container .case-study_container-goodapples-background {
-  width: 193px;
-  height: 207px;
+  width: 20%;
   position: absolute;
   z-index: 1;
   bottom: 89px;
@@ -739,8 +746,7 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
 }
 
 .case-study .case-study_container .case-study_container-2 .case-study_container-2_img {
-  width: 541px;
-  height: 316px;
+  width: 95%;
 }
 
 .email-form {
