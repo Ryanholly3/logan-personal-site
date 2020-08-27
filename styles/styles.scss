@@ -1,13 +1,15 @@
 @import './variables.scss';
 
 // GLOBAL
+html {
+  overflow-x: hidden;
+}
 
 body {
   margin: 0px;
   display: flex;
   justify-content: center;
   background-color: $darkBlue;
-  overflow-x: hidden;
 
   .page-container {
     width: 100vw;
