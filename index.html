@@ -3,11 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale = 1.0, 
-maximum-scale=1.0, user-scalable=no" />
         <title>Logan Peters</title>
         <meta name="description" content="Logan Peter's Portfolio">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0, 
+maximum-scale=1.0, user-scalable=no" />
 
         <link rel="icon" href="./assets/shared/logos/LPGroup@3x.png">
         <!-- fonts -->
@@ -327,11 +326,8 @@ maximum-scale=1.0, user-scalable=no" />
       let triggered1 = false
       let triggered2 = false
 
-      console.log(window.screen.width)
-
       if (window.screen.width < 768){
         window.onscroll = (e) => {
-          console.log(window.scrollY)
           if (window.scrollY > 200 && triggered1 === false){
             document.getElementById('t1').className += " t1"
             document.getElementById('t2').className += " t2"
@@ -339,7 +335,7 @@ maximum-scale=1.0, user-scalable=no" />
             triggered1 = true
           }
 
-          if (window.scrollY > 1000 && triggered2 === false){
+          if (window.scrollY > 1500 && triggered2 === false){
             document.getElementById('t4').className += " t1"
             document.getElementById('t5').className += " t2"
             document.getElementById('t6').className += " t3"
@@ -348,7 +344,6 @@ maximum-scale=1.0, user-scalable=no" />
         }
       } else {
         window.onscroll = (e) => {
-          console.log(window.scrollY)
           if (window.scrollY > 400 && triggered1 === false){
             document.getElementById('t1').className += " t1"
             document.getElementById('t2').className += " t2"

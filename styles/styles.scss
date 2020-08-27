@@ -1,10 +1,6 @@
 @import './variables.scss';
 
 // GLOBAL
-html {
-  overflow-x: hidden;
-}
-
 body {
   margin: 0px;
   display: flex;
@@ -12,7 +8,7 @@ body {
   background-color: $darkBlue;
 
   .page-container {
-    width: 100vw;
+    width: 100%;
     max-width: 1024px;
   }
 }
