@@ -1,6 +1,11 @@
 @import './variables.scss';
 
 // GLOBAL
+
+html {
+  position: relative;
+  overflow-x: hidden;
+}
 body {
   margin: 0px;
   display: flex;
