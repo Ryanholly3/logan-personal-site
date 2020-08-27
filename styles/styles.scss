@@ -70,7 +70,151 @@ header {
       }
     }
   }
+
+  // MOBILE HAMBURGER MENU
+  .mobile-nav__hamburger-nav {
+    display: none;
+    z-index: 10000;
+  }
+
+  #menuToggle {
+    display: block;
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle input {
+    display: block;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: -10px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+  }
+
+  /*
+  * Just a quick hamburger
+  */
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: $cream;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  /* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+  }
+
+  /*
+  * But let's hide the middle one.
+  */
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  /*
+  * Ohyeah and the last one should go the other direction
+  */
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  /*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+  #menu {
+    position: absolute;
+    width: 60vw;
+    height: 100vh;
+    margin: -100px 0 0 0;
+    padding: 50px;
+    padding-top: 125px;
+    right: -100px;
+    background: $greyBlue;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  #menu li {
+    padding: 30px 0 0 20px;
+    font-size: 60px;
+    font-family: $bebasNeue;
+    color: $cream;
+  }
+
+  /*
+  * And let's fade it in from the left
+  */
+  #menuToggle input:checked ~ ul {
+    transform: scale(1.0, 1.0);
+    opacity: 1;
+  }
 }
+
+// MOBILE HEADER
+@media screen and (max-width: 768px){
+
+  header {
+    .name-logo {
+      width: 100%;
+      margin-left: 32px;
+    }
+
+    .navigation {
+      display: none;
+    }
+
+    .mobile-nav__hamburger-nav {
+      display: block;
+    }
+  }
+}
+
+
+
+
+
 
 //common cs title-text component
 .common-container {
@@ -259,12 +403,12 @@ header {
   align-items: flex-end
 }
 
-.margin-top-bottom {
-  margin: 36px 0;
-}
-
 .align-self-center {
   align-self: center;
+}
+
+.margin-top-bottom {
+  margin: 36px 0;
 }
 
 .height-24px {
@@ -335,6 +479,17 @@ header {
   0% {transform: rotate(90deg) translate(0, 0);}  
   100% { transform: rotate(90deg) translate(120px, 0);}
 }
+
+// MOBILE TRIANGLES 
+@media screen and (max-width: 768px){
+  .triangle-right {
+    right: 8px;
+  }
+  .triangle-left{
+    left: 8px;
+  }
+}
+
 
 
 
@@ -495,6 +650,53 @@ header {
   }
 }
 
+// mobile HOME PAGE
+@media screen and (max-width: 768px){
+  .home_about-me {
+    height: 700px;
+    .home_about-me_container {
+      margin: 24px 24px 0;
+
+      .home_about-me_top-container {
+        flex-direction: column;
+        align-items: center;
+
+        .home_about-me_left-container {
+          width: 80%;
+          align-items: center;
+
+          .home_about-me_left-container_title {
+            text-align: center;
+          }
+          .home_about-me_left-container_divider {
+            margin: 0 auto;
+          }
+          .home_about-me_left-container_text {
+
+          }
+          .home_about-me_left-container_social-container {
+            width: 80%;
+
+            a:last-child {
+              display: none;
+            }
+          }
+        }
+        .home_about-me_right-container {
+          display: none;
+        }
+      }
+
+      .home_about-me_bottom-container {
+        display: none;
+      }
+    }
+  }
+}
+
+
+
+
 // CASE STUDY GLOBAL STYLES
 
 .case-study {
@@ -601,6 +803,34 @@ header {
   }
 }
 
+// mobile CASE STUDIES
+@media screen and (max-width: 768px){
+  .case-study {
+    .case-study_container {
+      .case-study_container-goodapples-background {
+        height: 30%;
+        width: auto;
+        left: auto;
+        right: 0;
+        bottom: 20%;
+      }
+
+      .case-study_container-1 {
+        width: 80%;
+      }
+      .case-study_container-2 {
+        width: 20%;
+        .case-study_container-2_img {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+
+
 // EMAIL FORM
 
 .email-form {
@@ -614,9 +844,9 @@ header {
   // relative for triangle animation
 
   .email-form_container {
-    width: 80%;
+    width: 100%;
     height: calc(100% - 64px);
-    margin: 32px 0;
+    margin: 32px 42px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -669,6 +899,18 @@ header {
           color: rgba($darkBlue, 0.5);
           background-color: $cream;
         }
+      }
+    }
+  }
+}
+
+
+// mobile EMAIL FORM
+@media screen and (max-width: 600px){
+  .email-form {
+    .email-form_container {
+      .email-form_container-title {
+        font-size: 24px;
       }
     }
   }
@@ -741,6 +983,14 @@ footer {
         border: none;
       }
     }
+  }
+}
+
+
+// MOBILE FOOTER
+@media screen and (max-width: 768px){
+  footer {
+    display: none;
   }
 }
 

@@ -25,6 +25,26 @@ header {
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: #1b262f;
+  /*
+  * Just a quick hamburger
+  */
+  /* 
+  * Transform all the slices of hamburger
+  * into a crossmark.
+  */
+  /*
+  * But let's hide the middle one.
+  */
+  /*
+  * Ohyeah and the last one should go the other direction
+  */
+  /*
+  * Make this absolute positioned
+  * at the top left of the screen
+  */
+  /*
+  * And let's fade it in from the left
+  */
 }
 
 header .name-logo {
@@ -84,6 +104,135 @@ header .navigation .nav-link-container .nav-link .nav-link-text {
 
 header .navigation .nav-link-container .nav-link .nav-link-text:hover {
   opacity: 50%;
+}
+
+header .mobile-nav__hamburger-nav {
+  display: none;
+  z-index: 10000;
+}
+
+header #menuToggle {
+  display: block;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+}
+
+header #menuToggle input {
+  display: block;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: -10px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  /* hide this */
+  z-index: 2;
+  /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+header #menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #efe4d8;
+  border-radius: 3px;
+  z-index: 1;
+  -webkit-transform-origin: 4px 0px;
+          transform-origin: 4px 0px;
+  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+header #menuToggle span:first-child {
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+header #menuToggle span:nth-last-child(2) {
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+}
+
+header #menuToggle input:checked ~ span {
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translate(-2px, -1px);
+          transform: rotate(45deg) translate(-2px, -1px);
+}
+
+header #menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+header #menuToggle input:checked ~ span:nth-last-child(2) {
+  opacity: 1;
+  -webkit-transform: rotate(-45deg) translate(0, -1px);
+          transform: rotate(-45deg) translate(0, -1px);
+}
+
+header #menu {
+  position: absolute;
+  width: 60vw;
+  height: 100vh;
+  margin: -100px 0 0 0;
+  padding: 50px;
+  padding-top: 125px;
+  right: -100px;
+  background: #2e383f;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transform: translate(100%, 0);
+          transform: translate(100%, 0);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+header #menu a {
+  text-decoration: none;
+}
+
+header #menu li {
+  padding: 30px 0 0 20px;
+  font-size: 60px;
+  font-family: "Bebas Neue", cursive;
+  color: #efe4d8;
+}
+
+header #menuToggle input:checked ~ ul {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  header .name-logo {
+    width: 100%;
+    margin-left: 32px;
+  }
+  header .navigation {
+    display: none;
+  }
+  header .mobile-nav__hamburger-nav {
+    display: block;
+  }
 }
 
 .common-container {
@@ -296,14 +445,14 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
           align-items: flex-end;
 }
 
-.margin-top-bottom {
-  margin: 36px 0;
-}
-
 .align-self-center {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.margin-top-bottom {
+  margin: 36px 0;
 }
 
 .height-24px {
@@ -421,6 +570,15 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
   100% {
     -webkit-transform: rotate(90deg) translate(120px, 0);
             transform: rotate(90deg) translate(120px, 0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .triangle-right {
+    right: 8px;
+  }
+  .triangle-left {
+    left: 8px;
   }
 }
 
@@ -624,6 +782,48 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
   opacity: 50%;
 }
 
+@media screen and (max-width: 768px) {
+  .home_about-me {
+    height: 700px;
+  }
+  .home_about-me .home_about-me_container {
+    margin: 24px 24px 0;
+  }
+  .home_about-me .home_about-me_container .home_about-me_top-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container {
+    width: 80%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container .home_about-me_left-container_title {
+    text-align: center;
+  }
+  .home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container .home_about-me_left-container_divider {
+    margin: 0 auto;
+  }
+  .home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container .home_about-me_left-container_social-container {
+    width: 80%;
+  }
+  .home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container .home_about-me_left-container_social-container a:last-child {
+    display: none;
+  }
+  .home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_right-container {
+    display: none;
+  }
+  .home_about-me .home_about-me_container .home_about-me_bottom-container {
+    display: none;
+  }
+}
+
 .case-study {
   height: 442px;
   width: 100%;
@@ -749,6 +949,25 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
   width: 95%;
 }
 
+@media screen and (max-width: 768px) {
+  .case-study .case-study_container .case-study_container-goodapples-background {
+    height: 30%;
+    width: auto;
+    left: auto;
+    right: 0;
+    bottom: 20%;
+  }
+  .case-study .case-study_container .case-study_container-1 {
+    width: 80%;
+  }
+  .case-study .case-study_container .case-study_container-2 {
+    width: 20%;
+  }
+  .case-study .case-study_container .case-study_container-2 .case-study_container-2_img {
+    display: none;
+  }
+}
+
 .email-form {
   width: 100%;
   height: 514px;
@@ -766,9 +985,9 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
 }
 
 .email-form .email-form_container {
-  width: 80%;
+  width: 100%;
   height: calc(100% - 64px);
-  margin: 32px 0;
+  margin: 32px 42px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -846,6 +1065,12 @@ header .navigation .nav-link-container .nav-link .nav-link-text:hover {
   resize: none;
   color: rgba(27, 38, 47, 0.5);
   background-color: #efe4d8;
+}
+
+@media screen and (max-width: 600px) {
+  .email-form .email-form_container .email-form_container-title {
+    font-size: 24px;
+  }
 }
 
 footer {
@@ -936,6 +1161,12 @@ footer .footer_container .footer_dot-container .footer_dot {
   height: 5px;
   border-radius: 2.5px;
   border: none;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    display: none;
+  }
 }
 
 .cs-general {
