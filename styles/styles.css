@@ -7,6 +7,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #1b262f;
+  overflow-x: hidden;
 }
 
 body .page-container {
@@ -210,7 +211,7 @@ header #menu a {
 }
 
 header #menu li {
-  padding: 30px 0 0 20px;
+  padding: 30px 0 0 0;
   font-size: 60px;
   font-family: "Bebas Neue", cursive;
   color: #efe4d8;
@@ -956,6 +957,9 @@ header #menuToggle input:checked ~ ul {
     left: auto;
     right: 0;
     bottom: 20%;
+  }
+  .case-study .case-study_container .case-study_container-digiline-background {
+    width: 90%;
   }
   .case-study .case-study_container .case-study_container-1 {
     width: 80%;

@@ -7,6 +7,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: $darkBlue;
+  overflow-x: hidden;
 
   .page-container {
     width: 100vw;
@@ -177,7 +178,7 @@ header {
   }
 
   #menu li {
-    padding: 30px 0 0 20px;
+    padding: 30px 0 0 0;
     font-size: 60px;
     font-family: $bebasNeue;
     color: $cream;
@@ -813,6 +814,9 @@ header {
         left: auto;
         right: 0;
         bottom: 20%;
+      }
+      .case-study_container-digiline-background {
+        width: 90%;
       }
 
       .case-study_container-1 {
