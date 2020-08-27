@@ -190,10 +190,10 @@ header #menuToggle input:checked ~ span:nth-last-child(2) {
 
 header #menu {
   position: fixed;
-  width: 70vw;
+  width: 80vw;
   height: 100vh;
   margin: -100px 0 0 0;
-  padding: 50px;
+  padding: 20px;
   padding-top: 125px;
   right: -100px;
   background: #2e383f;
