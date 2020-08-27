@@ -1,5 +1,4 @@
 html {
-  position: relative;
   overflow-x: hidden;
 }
 
@@ -12,6 +11,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #1b262f;
+  overflow-x: hidden;
 }
 
 body .page-container {
@@ -189,7 +189,7 @@ header #menuToggle input:checked ~ span:nth-last-child(2) {
 }
 
 header #menu {
-  position: absolute;
+  position: fixed;
   width: 60vw;
   height: 100vh;
   margin: -100px 0 0 0;

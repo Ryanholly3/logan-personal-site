@@ -3,7 +3,6 @@
 // GLOBAL
 
 html {
-  position: relative;
   overflow-x: hidden;
 }
 body {
@@ -11,6 +10,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: $darkBlue;
+  overflow-x: hidden;
 
   .page-container {
     width: 100%;
@@ -160,7 +160,7 @@ header {
   * at the top left of the screen
   */
   #menu {
-    position: absolute;
+    position: fixed;
     width: 60vw;
     height: 100vh;
     margin: -100px 0 0 0;
