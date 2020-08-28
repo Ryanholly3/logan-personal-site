@@ -1080,13 +1080,13 @@ footer {
       align-items: center;
   
       .about-me_title-img {
-        height: 120px;
+        width: 70%;
       }
     }
   }
 
   .about-me_main-container {
-    height: 920px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     background-color: $cream;
@@ -1095,9 +1095,9 @@ footer {
 
     .about-me_main-container-top {
       display: flex;
-      height: 560px;
+      height: 100%;
       flex-direction: row;
-      margin: 100px 42px 0;
+      margin: 82px 42px 0;
 
       .about-me_main-container-top-left {
         height: 330px;
@@ -1121,6 +1121,9 @@ footer {
           bottom: 20px;
         }
       }
+      .about-me_main-container-top-left_portrait-mobile {
+        display: none;
+      }
 
       .about-me_main-container-top-right {
         width: 65%;
@@ -1140,15 +1143,56 @@ footer {
     }
 
     .about-me_main-container-bottom {
-      height: 172px;
-      width: 800px;
-      margin: auto;
+      width: calc(100% - 124px);
+      margin: 42px auto;
       display: flex;
       justify-content: space-between;
 
       .about-me_main-container-bottom-img {
-        width: 258px;
-        height: 172px;
+        width: 30%;
+        height: auto;
+      }
+    }
+  }
+}
+
+// MOBILE ABOUT ME PAGE
+@media screen and (max-width: 768px){
+  .about-me {
+
+    .about-me_container {
+      .about-me_container-top {
+        .about-me_title-img {
+          width: 80%;
+        }
+      }
+    }
+
+    .about-me_main-container {
+      padding-bottom: 82px;
+      .about-me_main-container-top {
+        display: block;
+  
+        .about-me_main-container-top-left {
+          display: none;
+        }
+        .about-me_main-container-top-left_portrait-mobile {
+          display: block;
+          float: left;
+          margin: 0 24px 24px 0;
+          width: 200px;
+        }
+  
+        .about-me_main-container-top-right {
+          width: 100%;
+          .about-me_main-container-top-right-text {
+            font-size: 12px;
+          }
+        }
+      }
+  
+      .about-me_main-container-bottom {
+        display: none;
       }
     }
   }
@@ -1156,8 +1200,6 @@ footer {
 
 
 // DIGILINE PAGE 
-
-
 .digiline {
   width: 100%;
 

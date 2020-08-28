@@ -1276,11 +1276,11 @@ footer .footer_container .footer_dot-container .footer_dot {
 }
 
 .about-me .about-me_container .about-me_container-top .about-me_title-img {
-  height: 120px;
+  width: 70%;
 }
 
 .about-me .about-me_main-container {
-  height: 920px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1296,12 +1296,12 @@ footer .footer_container .footer_dot-container .footer_dot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 560px;
+  height: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 100px 42px 0;
+  margin: 82px 42px 0;
 }
 
 .about-me .about-me_main-container .about-me_main-container-top .about-me_main-container-top-left {
@@ -1331,6 +1331,10 @@ footer .footer_container .footer_dot-container .footer_dot {
   bottom: 20px;
 }
 
+.about-me .about-me_main-container .about-me_main-container-top .about-me_main-container-top-left_portrait-mobile {
+  display: none;
+}
+
 .about-me .about-me_main-container .about-me_main-container-top .about-me_main-container-top-right {
   width: 65%;
 }
@@ -1348,9 +1352,8 @@ footer .footer_container .footer_dot-container .footer_dot {
 }
 
 .about-me .about-me_main-container .about-me_main-container-bottom {
-  height: 172px;
-  width: 800px;
-  margin: auto;
+  width: calc(100% - 124px);
+  margin: 42px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1360,8 +1363,38 @@ footer .footer_container .footer_dot-container .footer_dot {
 }
 
 .about-me .about-me_main-container .about-me_main-container-bottom .about-me_main-container-bottom-img {
-  width: 258px;
-  height: 172px;
+  width: 30%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .about-me .about-me_container .about-me_container-top .about-me_title-img {
+    width: 80%;
+  }
+  .about-me .about-me_main-container {
+    padding-bottom: 82px;
+  }
+  .about-me .about-me_main-container .about-me_main-container-top {
+    display: block;
+  }
+  .about-me .about-me_main-container .about-me_main-container-top .about-me_main-container-top-left {
+    display: none;
+  }
+  .about-me .about-me_main-container .about-me_main-container-top .about-me_main-container-top-left_portrait-mobile {
+    display: block;
+    float: left;
+    margin: 0 24px 24px 0;
+    width: 200px;
+  }
+  .about-me .about-me_main-container .about-me_main-container-top .about-me_main-container-top-right {
+    width: 100%;
+  }
+  .about-me .about-me_main-container .about-me_main-container-top .about-me_main-container-top-right .about-me_main-container-top-right-text {
+    font-size: 12px;
+  }
+  .about-me .about-me_main-container .about-me_main-container-bottom {
+    display: none;
+  }
 }
 
 .digiline {
