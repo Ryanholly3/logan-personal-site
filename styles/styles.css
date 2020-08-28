@@ -1212,7 +1212,7 @@ footer .footer_container .footer_dot-container .footer_dot {
 }
 
 .cs-general .cs-general_container .cs-general_container-top .cs-general_title-img {
-  height: 120px;
+  width: 90%;
 }
 
 .cs-general .cs-general_container .cs-general_container-bottom .cs-general_text-container {
@@ -1225,6 +1225,18 @@ footer .footer_container .footer_dot-container .footer_dot {
   margin: 24px 0 0 0;
   color: #efe4d8;
   opacity: 75%;
+}
+
+@media screen and (max-width: 768px) {
+  .cs-general {
+    height: 300px;
+  }
+  .cs-general .cs-general_container {
+    margin: 0 24px;
+  }
+  .cs-general .cs-general_container .cs-general_container-bottom {
+    display: none;
+  }
 }
 
 .about-me {

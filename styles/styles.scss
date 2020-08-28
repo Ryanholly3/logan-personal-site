@@ -1024,7 +1024,7 @@ footer {
       align-items: center;
   
       .cs-general_title-img {
-        height: 120px;
+        width: 90%;
       }
     }
 
@@ -1043,6 +1043,21 @@ footer {
     }
   }
 }
+
+// MOBILE CASE STUDIES PAGE
+@media screen and (max-width: 768px){
+  .cs-general {
+    height: 300px;
+    .cs-general_container {
+      margin: 0 24px;
+      .cs-general_container-bottom {
+        display: none;
+      }
+    }
+  }
+}
+
+
 
 // ABOUT ME PAGE
 
