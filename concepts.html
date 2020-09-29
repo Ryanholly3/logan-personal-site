@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+  <html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Logan Peters | Concepts</title>
+        <meta name="description" content="Logan Peter's Portfolio">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" href="./assets/shared/logos/LPGroup@3x.png">
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+        
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="./styles/styles.css">
+        
+    </head>
+    <body>
+      <div class='page-container'>
+        <header>
+          <div class='name-logo'>
+            <img 
+              src='./assets/shared/logos/Logo.png' 
+              class='logo'
+            />
+            <a href='./index.html' class='no-text-decoration'>
+              <h2 class='name'>Logan Peters</h2>
+            </a>
+          </div>
+          <nav class='navigation'>
+            <div class='nav-link-container'>
+              <a class='nav-link' href='./index.html'>
+                <h3 class='nav-link-text'>Home</h2>
+              </a>
+            </div>
+            <div class='nav-link-container'>
+              <a class='nav-link' href='./case-studies.html'>
+                <h3 class='nav-link-text'>Case Studies</h2>
+              </a>
+            </div>
+            <div class='nav-link-container'>
+              <a class='nav-link' href='./concepts.html'>
+                <h3 class='nav-link-text'>Concepts</h2>
+              </a>
+            </div>
+            <div class='nav-link-container'>
+              <a class='nav-link' href='./about-me.html'>
+                <h3 class='nav-link-text'>About Me</h2>
+              </a>
+            </div>
+          </nav>
+
+          <!-- MOBILE HAMBURGER-->
+          <nav class="mobile-nav__hamburger-nav">
+            <div id="menuToggle">
+              <input type="checkbox" />
+              
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              <ul id="menu">
+                <a href="./index.html"><li>HOME</li></a>
+                <a href="./case-studies.html"><li>CASE STUDIES</li></a>
+                <a href="./concepts.html"><li>CONCEPTS</li></a>
+                <a href="./about-me.html"><li>ABOUT ME</li></a>
+                <a href='./assets/shared/Loganpetersresume.pdf' download target='_blank'>
+                  <li>Resume</li>
+                </a>
+              </ul>
+            </div>
+          </nav>
+          <!-- end hamburger -->
+
+        </header>
+      
+        <section class='cs-general'>
+          <div class='cs-general_container'>
+            <div class='cs-general_container-top'>
+              <img
+                class='cs-general_title-img-small'
+                src='./assets/concepts/Concepts.png'
+              />
+            </div>
+            <div class='cs-general_container-bottom'>
+              <div class='cs-general_text-container'>
+                <p class='cs-general_text'>
+                  This is a collection of personal projects and concepts that I 
+                  have designed over the past few months.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="concept">
+          <img src='./assets/CS_digiline/Triangle@3x.png'class='triangle-right'/>
+          <img src='./assets/CS_digiline/Triangle@3x.png' id='t1' class='triangle-right'/>
+          <img src='./assets/CS_digiline/Triangle@3x.png'id='t2' class='triangle-right'/>
+          <img src='./assets/CS_digiline/Triangle@3x.png'id='t3' class='triangle-right'/>
+
+          <div class="concept_container">
+            <div class="concept_image-menu"></div>
+            <p class="concept_title">Menu Design</p>
+            <hr class='concept_line'>
+          </div>
+        </section>
+
+        <section class="concept">
+          <div class="concept_container">
+            <div class="concept_image-beer"></div>
+            <p class="concept_title">Craft Beer Locator</p>
+            <hr class='concept_line'>
+          </div>
+        </section>
+
+        <section class="concept">
+          <img src='./assets/CS_digiline/Triangle@3x.png'class='triangle-left'/>
+          <img src='./assets/CS_digiline/Triangle@3x.png' id='t4' class='triangle-left'/>
+          <img src='./assets/CS_digiline/Triangle@3x.png'id='t5' class='triangle-left'/>
+          <img src='./assets/CS_digiline/Triangle@3x.png'id='t6' class='triangle-left'/>
+          <div class="concept_container">
+            <div class="concept_image-fourteener"></div>
+            <p class="concept_title">Hike Tracking / Information</p>
+            <hr class='concept_line'>
+          </div>
+        </section>
+
+        <footer>
+          <div class='footer_container'>
+            <p class='footer_text'>Denver, CO</p>
+            <div class='footer_dot-container'>
+              <div class='footer_dot'></div>
+            </div>
+            <a href='mailto:loganrpeters92@gmail.com'>
+              <p class='footer_links'>loganrpeters92@gmail.com</p>
+            </a>
+            <div class='footer_dot-container'>
+              <div class='footer_dot'></div>
+            </div>
+            <a href="tel:720-256-1522">
+              <p class='footer_links'>720.256.1522</p>
+            </a>
+            <div class='footer_dot-container'>
+              <div class='footer_dot'></div>
+            </div>
+            <a href="https://www.linkedin.com/in/loganryanpeters77/" target='_blank'>
+              <p class='footer_links'>LinkedIn</p>
+            </a>
+          </div>
+          <div class='footer_container'>
+            <a
+              href="./assets/shared/Loganpetersresume.pdf"
+              target='_blank'
+              download
+            >
+              <p class='footer_resume-link'>Download Resume</p>
+            </a>
+          </div>
+        </footer>
+      </div>
+    </body>
+    <script>
+      let triggered1 = false
+      let triggered2 = false
+
+      window.onscroll = (e) => {
+        console.log(window.scrollY)
+        if (window.scrollY > 5 && triggered1 === false){
+          document.getElementById('t1').className += " t1"
+          document.getElementById('t2').className += " t2"
+          document.getElementById('t3').className += " t3"
+          triggered1 = true
+        }
+
+        if (window.scrollY > 1650 && triggered2 === false){
+          document.getElementById('t4').className += " t1"
+          document.getElementById('t5').className += " t2"
+          document.getElementById('t6').className += " t3"
+          triggered2 = true
+        }
+      }
+    </script>
+</html>

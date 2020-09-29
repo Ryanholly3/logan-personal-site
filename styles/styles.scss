@@ -1026,6 +1026,9 @@ footer {
       .cs-general_title-img {
         width: 90%;
       }
+      .cs-general_title-img-small {
+        width: 70%;
+      }
     }
 
     .cs-general_container-bottom {
@@ -1673,3 +1676,82 @@ footer {
 }
 
 @media screen and (min-width: 768px){}
+
+
+// CONCEPTS PAGE
+
+.concept {
+  width: 100%;
+  margin: 96px 0;
+  position: relative;
+
+  .concept_container {
+    height: 100%;
+    margin: 0 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .concept_image-menu {
+      width: 100%;
+      height: 600px;
+      background-image: url("../assets/concepts/MenuDesign.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .concept_image-beer {
+      width: 100%;
+      height: 600px;
+      background-image: url("../assets/concepts/BeerFinder.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .concept_image-fourteener {
+      width: 100%;
+      height: 600px;
+      background-image: url("../assets/concepts/4Teener.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .concept_title {
+      margin: 48px 0;
+      font-family: $bebasNeue;
+      font-size: 36px;
+      color: $cream;
+    }
+    .concept_line {
+      width: 80%;
+      margin: 0 auto;
+      opacity: 75%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .concept {
+    .concept_container {
+      height: inherit;
+      .concept_image-menu {
+        height: 1500px;
+        background-image: url("../assets/concepts/MenuMobile.jpg");
+      }
+      .concept_image-beer {
+        height: 1500px;
+        background-image: url("../assets/concepts/BeerLocatorMobile.jpg");
+      }
+      .concept_image-fourteener {
+        height: 1500px;
+        background-image: url("../assets/concepts/4TeenerMobile.jpg");
+      }
+      .concept_title {
+
+      }
+      .concept_line {
+
+      }
+    }
+  }
+}

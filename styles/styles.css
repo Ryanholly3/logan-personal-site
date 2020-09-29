@@ -1215,6 +1215,10 @@ footer .footer_container .footer_dot-container .footer_dot {
   width: 90%;
 }
 
+.cs-general .cs-general_container .cs-general_container-top .cs-general_title-img-small {
+  width: 70%;
+}
+
 .cs-general .cs-general_container .cs-general_container-bottom .cs-general_text-container {
   width: 63%;
 }
@@ -2010,5 +2014,84 @@ footer .footer_container .footer_dot-container .footer_dot {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.concept {
+  width: 100%;
+  margin: 96px 0;
+  position: relative;
+}
+
+.concept .concept_container {
+  height: 100%;
+  margin: 0 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.concept .concept_container .concept_image-menu {
+  width: 100%;
+  height: 600px;
+  background-image: url("../assets/concepts/MenuDesign.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.concept .concept_container .concept_image-beer {
+  width: 100%;
+  height: 600px;
+  background-image: url("../assets/concepts/BeerFinder.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.concept .concept_container .concept_image-fourteener {
+  width: 100%;
+  height: 600px;
+  background-image: url("../assets/concepts/4Teener.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.concept .concept_container .concept_title {
+  margin: 48px 0;
+  font-family: "Bebas Neue", cursive;
+  font-size: 36px;
+  color: #efe4d8;
+}
+
+.concept .concept_container .concept_line {
+  width: 80%;
+  margin: 0 auto;
+  opacity: 75%;
+}
+
+@media screen and (max-width: 768px) {
+  .concept .concept_container {
+    height: inherit;
+  }
+  .concept .concept_container .concept_image-menu {
+    height: 1500px;
+    background-image: url("../assets/concepts/MenuMobile.jpg");
+  }
+  .concept .concept_container .concept_image-beer {
+    height: 1500px;
+    background-image: url("../assets/concepts/BeerLocatorMobile.jpg");
+  }
+  .concept .concept_container .concept_image-fourteener {
+    height: 1500px;
+    background-image: url("../assets/concepts/4TeenerMobile.jpg");
+  }
 }
 /*# sourceMappingURL=styles.css.map */
