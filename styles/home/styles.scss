@@ -1,0 +1,201 @@
+@import '../shared/variables.scss';
+
+// HOME PAGE
+
+.home_about-me {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: row;
+  background-image: url("../../assets/homePageCaseStudy/BackgroundImage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .home_about-me_container {
+    width: 100%;
+    margin: 42px 42px 0;
+    display: flex;
+    flex-direction: column;
+
+    .home_about-me_top-container {
+      width: 100%;
+      height: 500px;
+      display: flex;
+      flex-direction: row;
+
+      .home_about-me_left-container {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    
+        .home_about-me_left-container_title {
+          font-family: $archivoBlack;
+          letter-spacing: 1px;
+          font-size: 44px;
+          color: $cream;
+        }
+  
+        .home_about-me_left-container_divider {
+          margin: 0;
+          width: 50%;
+          border-top: 2px solid $cream;
+        }
+    
+        .home_about-me_left-container_text {
+          font-family: $jost;
+          font-size: 18px;
+          margin: 40px 0;
+          color: $cream;
+          opacity: 75%;
+        }
+  
+        .home_about-me_left-container_social-container {
+          width: 66%;
+          height: 32px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+  
+          .home_about-me_left-container_social-icons {
+            height: 24px;
+            width: 24px;
+          }
+
+          .home_about-me_left-container_social-icons:hover {
+            opacity: 50%;
+          }
+  
+          .home_about-me_left-container_social-icons_email {
+            height: 24px;
+            width: 28px;
+          }
+
+          .home_about-me_left-container_social-icons_email:hover {
+            opacity: 50%;
+          }
+        }
+      }
+    
+      .home_about-me_right-container {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        
+        .home_about-me_right_portrait-frame {
+          position: absolute;
+          width: 90%;
+          height: 100%;
+          right: 20px;
+          bottom: -20px;
+          background-color: $greyBlue;
+        }
+  
+        .home_about-me_right_portrait {
+          background-image: url('../../assets/homePageCaseStudy/me.png');
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          height: 100%;
+          width: 90%;
+          z-index: 1000;
+        }
+      }
+    }
+
+    .home_about-me_bottom-container {
+      width: 95%;
+      margin-top: 60px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .home_about-me_bottom-container_title {
+        font-family: $archivoBlack;
+        letter-spacing: 1px;
+        font-size: 40px;
+        margin-top: 0;
+        color: $cream;
+      }
+
+      .home_about-me_bottom-container_text {
+        margin: 0;
+        font-family: $jost;
+        font-size: 18px;
+        color: $cream;
+        opacity: 75%;
+      }
+    }
+
+    .home_about-me_bottom_continue-reading-container {
+      width: 100%;
+      height: 32px;
+      display: flex;
+      justify-content: flex-end;
+
+      .home_about-me_bottom_continue-reading-text {
+        width: 140px;
+        margin: 12px 12px 0 0;
+        font-family: $jost;
+        font-size: 18px;
+        color: $cream;
+        opacity: 75%;
+        text-decoration: underline;
+      }
+
+      .home_about-me_bottom_continue-reading-text:hover {
+        opacity: 50%;
+      }
+    }
+  }
+}
+
+// mobile HOME PAGE
+@media screen and (max-width: 768px){
+  .home_about-me {
+    height: 700px;
+    .home_about-me_container {
+      margin: 24px 24px 0;
+
+      .home_about-me_top-container {
+        flex-direction: column;
+        align-items: center;
+
+        .home_about-me_left-container {
+          width: 80%;
+          align-items: center;
+
+          .home_about-me_left-container_title {
+            text-align: center;
+          }
+          .home_about-me_left-container_divider {
+            margin: 0 auto;
+          }
+          .home_about-me_left-container_text {
+
+          }
+          .home_about-me_left-container_social-container {
+            width: 80%;
+
+            a:last-child {
+              display: none;
+            }
+          }
+        }
+        .home_about-me_right-container {
+          display: none;
+        }
+      }
+
+      .home_about-me_bottom-container {
+        display: none;
+      }
+    }
+  }
+}

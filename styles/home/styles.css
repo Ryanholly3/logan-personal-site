@@ -1,0 +1,242 @@
+.home_about-me {
+  width: 100%;
+  height: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-image: url("../../assets/homePageCaseStudy/BackgroundImage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home_about-me .home_about-me_container {
+  width: 100%;
+  margin: 42px 42px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home_about-me .home_about-me_container .home_about-me_top-container {
+  width: 100%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container .home_about-me_left-container_title {
+  font-family: "Archivo Black", sans-serif;
+  letter-spacing: 1px;
+  font-size: 44px;
+  color: #efe4d8;
+}
+
+.home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container .home_about-me_left-container_divider {
+  margin: 0;
+  width: 50%;
+  border-top: 2px solid #efe4d8;
+}
+
+.home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container .home_about-me_left-container_text {
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  margin: 40px 0;
+  color: #efe4d8;
+  opacity: 75%;
+}
+
+.home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container .home_about-me_left-container_social-container {
+  width: 66%;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container .home_about-me_left-container_social-container .home_about-me_left-container_social-icons {
+  height: 24px;
+  width: 24px;
+}
+
+.home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container .home_about-me_left-container_social-container .home_about-me_left-container_social-icons:hover {
+  opacity: 50%;
+}
+
+.home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container .home_about-me_left-container_social-container .home_about-me_left-container_social-icons_email {
+  height: 24px;
+  width: 28px;
+}
+
+.home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container .home_about-me_left-container_social-container .home_about-me_left-container_social-icons_email:hover {
+  opacity: 50%;
+}
+
+.home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_right-container {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+}
+
+.home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_right-container .home_about-me_right_portrait-frame {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  right: 20px;
+  bottom: -20px;
+  background-color: #2e383f;
+}
+
+.home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_right-container .home_about-me_right_portrait {
+  background-image: url("../../assets/homePageCaseStudy/me.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 90%;
+  z-index: 1000;
+}
+
+.home_about-me .home_about-me_container .home_about-me_bottom-container {
+  width: 95%;
+  margin-top: 60px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home_about-me .home_about-me_container .home_about-me_bottom-container .home_about-me_bottom-container_title {
+  font-family: "Archivo Black", sans-serif;
+  letter-spacing: 1px;
+  font-size: 40px;
+  margin-top: 0;
+  color: #efe4d8;
+}
+
+.home_about-me .home_about-me_container .home_about-me_bottom-container .home_about-me_bottom-container_text {
+  margin: 0;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  color: #efe4d8;
+  opacity: 75%;
+}
+
+.home_about-me .home_about-me_container .home_about-me_bottom_continue-reading-container {
+  width: 100%;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.home_about-me .home_about-me_container .home_about-me_bottom_continue-reading-container .home_about-me_bottom_continue-reading-text {
+  width: 140px;
+  margin: 12px 12px 0 0;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  color: #efe4d8;
+  opacity: 75%;
+  text-decoration: underline;
+}
+
+.home_about-me .home_about-me_container .home_about-me_bottom_continue-reading-container .home_about-me_bottom_continue-reading-text:hover {
+  opacity: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .home_about-me {
+    height: 700px;
+  }
+  .home_about-me .home_about-me_container {
+    margin: 24px 24px 0;
+  }
+  .home_about-me .home_about-me_container .home_about-me_top-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container {
+    width: 80%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container .home_about-me_left-container_title {
+    text-align: center;
+  }
+  .home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container .home_about-me_left-container_divider {
+    margin: 0 auto;
+  }
+  .home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container .home_about-me_left-container_social-container {
+    width: 80%;
+  }
+  .home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_left-container .home_about-me_left-container_social-container a:last-child {
+    display: none;
+  }
+  .home_about-me .home_about-me_container .home_about-me_top-container .home_about-me_right-container {
+    display: none;
+  }
+  .home_about-me .home_about-me_container .home_about-me_bottom-container {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
