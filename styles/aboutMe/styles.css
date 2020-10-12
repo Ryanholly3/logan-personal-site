@@ -1,0 +1,158 @@
+.about-me {
+  width: 100%;
+}
+
+.about-me .about-me_container {
+  height: 100%;
+  margin: 0 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-me .about-me_container .about-me_container-top {
+  width: 100%;
+  height: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-me .about-me_container .about-me_container-top .about-me_title-img {
+  width: 70%;
+}
+
+.about-me .about-me_main-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #efe4d8;
+  position: relative;
+}
+
+.about-me .about-me_main-container .about-me_main-container-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 82px 42px 0;
+}
+
+.about-me .about-me_main-container .about-me_main-container-top .about-me_main-container-top-left {
+  height: 330px;
+  width: 35%;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.about-me .about-me_main-container .about-me_main-container-top .about-me_main-container-top-left .about-me_main-container-top-left_portrait-frame {
+  position: relative;
+  width: 248px;
+  background-color: #2e383f;
+}
+
+.about-me .about-me_main-container .about-me_main-container-top .about-me_main-container-top-left .about-me_main-container-top-left_portrait {
+  position: absolute;
+  height: 330px;
+  width: 248px;
+  z-index: 1000;
+  left: 20px;
+  bottom: 20px;
+}
+
+.about-me .about-me_main-container .about-me_main-container-top .about-me_main-container-top-left_portrait-mobile {
+  display: none;
+}
+
+.about-me .about-me_main-container .about-me_main-container-top .about-me_main-container-top-right {
+  width: 65%;
+}
+
+.about-me .about-me_main-container .about-me_main-container-top .about-me_main-container-top-right .about-me_main-container-top-right-text {
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  margin: 0;
+  color: #1b262f;
+  opacity: 75%;
+}
+
+.about-me .about-me_main-container .about-me_main-container-top .about-me_main-container-top-right .bold {
+  font-weight: 600;
+}
+
+.about-me .about-me_main-container .about-me_main-container-bottom {
+  width: calc(100% - 124px);
+  margin: 42px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-me .about-me_main-container .about-me_main-container-bottom .about-me_main-container-bottom-img {
+  width: 30%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .about-me .about-me_container .about-me_container-top .about-me_title-img {
+    width: 80%;
+  }
+  .about-me .about-me_main-container {
+    padding-bottom: 82px;
+  }
+  .about-me .about-me_main-container .about-me_main-container-top {
+    display: block;
+  }
+  .about-me .about-me_main-container .about-me_main-container-top .about-me_main-container-top-left {
+    display: none;
+  }
+  .about-me .about-me_main-container .about-me_main-container-top .about-me_main-container-top-left_portrait-mobile {
+    display: block;
+    float: left;
+    margin: 0 24px 24px 0;
+    width: 150px;
+  }
+  .about-me .about-me_main-container .about-me_main-container-top .about-me_main-container-top-right {
+    width: 100%;
+  }
+  .about-me .about-me_main-container .about-me_main-container-top .about-me_main-container-top-right .about-me_main-container-top-right-text {
+    font-size: 12px;
+  }
+  .about-me .about-me_main-container .about-me_main-container-bottom {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

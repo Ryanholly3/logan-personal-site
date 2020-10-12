@@ -1,0 +1,480 @@
+@import '../shared/variables.scss';
+
+// DIGILINE PAGE 
+.digiline {
+  width: 100%;
+
+  .digiline_container {
+    height: 100%;
+    margin: 0 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .digiline_container-top {
+      width: 100%;
+      height: 360px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      .digiline_title-img {
+        width: 60%;
+      }
+    }
+  }
+
+  .digiline_desktops-container {
+    width: 100%;
+    height: 442px;
+    position: relative;
+    background-color: $greyBlue;
+
+    .digiline_desktops-container_background-boxes-1 {
+      width: 225px;
+      position: absolute;
+      z-index: 1;
+      top: 12px;
+    }
+
+    .digiline_desktops-container_background-boxes-2 {
+      width: 225px;
+      transform: rotate(180deg);
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      bottom: 12px;
+    }
+
+    .digiline_desktops-inner-container {
+      height: 100%;
+      margin: 0 42px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+
+      .digiline_desktops-container_laptop {
+        width: 560px;
+        position: absolute;
+        z-index: 3;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom: 48px;
+      }
+      .digiline_desktops-inner-container_desktops {
+        height: 240px;
+        z-index: 2;
+      }
+    }
+  }
+
+  .digiline_competitive-analysis {
+    width: 100%;
+    height: 442px;
+    background-color: $cream;
+
+    .digiline_competitive-analysis_inner-container {
+      height: 100%;
+      margin: 0 42px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      position: relative;
+
+      .digiline_competitive-analysis_inner-container-text {
+        margin: 0;
+        position: absolute;
+        font-family: $jost;
+        color: $darkBlue;
+        font-size: 14px;
+        bottom: 8px;
+        left: 0px;
+      }
+
+      .digiline_competitive-analysis_inner-container_background-img {
+        padding-top: 68px;
+        width: 460px;
+      }
+
+      .digiline_competitive-analysis_inner-container_front-img {
+        width: 460px;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom: 56px;
+      }
+    }
+  }
+
+  .digiline_design {
+    width: 100%;
+    height: 3900px;
+    background-color: $darkBlue;
+
+    .digiline_design-container {
+      margin: 78px 42px 0;
+      
+
+      // Mood Board
+      .digiline_design_mood-board-container {
+        height: 400px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .digiline_design_mood-board-img {
+          height: 320px;
+        }
+      }
+
+      // Style tile
+      .digiline_design_style-tile-container {
+        height: 350px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .digiline_design_style-tile-img {
+          height: 267px;
+        }
+      }
+
+      // High fidelity
+      .digiline_design_high-fidelity-top-container {
+        height: 350px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        .digiline_design_high-fidelity-top-img {
+          width: 254px;
+        }
+
+        .digiline_design_high-fidelity-top-arrow {
+          width: 35px;
+        }
+
+        .digiline_design_high-fidelity-top-text {
+          position: absolute;
+          font-family: $jost;
+          font-size: 14px;
+          color: $cream;
+          margin: 0;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+    // Desktop
+    .digiline_design_high-fidelity-bottom-container {
+      width: 100%;
+      margin: 24px 0 72px;
+      height: 570px;
+      
+      position: relative;
+
+      .digiline_design_high-fidelity-bottom {
+        height: 100%;
+        margin: 0 42px;
+        width: calc(100% - 84px);
+        position: relative;
+        display: flex;
+        flex-direction: row;
+
+        .digiline_design_high-fidelity-bottom-left {
+          .digiline_design_high-fidelity-bottom-left-logo {
+            padding-top: 102px;
+            width: 312px;
+          }
+        }
+  
+        .digiline_design_high-fidelity-bottom-right {
+          width: calc(100% - 312px);
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+
+          .digiline_design_high-fidelity-bottom-right-desktop {
+            width: 572px;
+            z-index: 5;
+          }
+        }
+  
+        .digiline_design_high-fidelity-bottom-laptop {
+          position: absolute;
+          width: 541px;
+          bottom: 0;
+          left: 51px;
+          z-index: 6;
+        }
+      }
+
+      .digiline_design_high-fidelity-bottom-container_background {
+        width: 600px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    // Tablet and Mobile
+    .digiline_design_high-fidelity-bottom-mobile-container {
+      display: none;
+      width: 100%;
+      margin: 24px 0 72px;
+      .digiline_design_high-fidelity-bottom-mobile {
+        height: 100%;
+        margin: 0 42px;
+        width: calc(100% - 84px);
+        display: flex;
+        flex-direction: column;
+
+        .digiline_design_high-fidelity-bottom-mobile-top {
+          .digiline_design_high-fidelity-bottom-mobile-top-logo {
+            padding-top: 102px;
+            width: 312px;
+          }
+        }
+
+        .digiline_design_high-fidelity-bottom-mobile-middle {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 48px 0;
+          .digiline_design_high-fidelity-bottom-mobile-middle-desktop {
+            width: 70%;
+          }
+        }
+        .digiline_design_high-fidelity-bottom-mobile-middle-laptop {
+          width: 90%;
+          margin: auto;
+        }
+      }
+    }
+
+    .digiline_design-systems {
+      margin: 0 42px;
+
+      .digiline_design-systems_example-container {
+        height: 331px;
+        width: 100%;
+        margin: 0 0 62px;
+        display: flex;
+        justify-content: space-between;
+
+        .digiline_design-systems_example-img {
+          width: 428px;
+        }
+      }
+      .digiline_design_prototype-button-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .cs-bottom-navigation {
+      margin: 62px 42px 0;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+// DIGILINE MOBILE
+
+@media screen and (max-width: 978px){
+  .digiline {
+     .digiline_design {
+        height: auto;
+        .digiline_design-container {
+          .digiline_design_mood-board-container {
+            .digiline_design_mood-board-img {
+              height: 250px;
+              margin-bottom: 24px;
+            }
+          }
+          .digiline_design_style-tile-container {
+            .digiline_design_style-tile-img {
+              height: 210px;
+            }
+          }
+          .digiline_design_high-fidelity-top-container {
+            height: 300px;
+            .digiline_design_high-fidelity-top-img {
+              width: 200px;
+            }
+    
+            .digiline_design_high-fidelity-top-arrow {
+              width: 24px;
+            }
+    
+            .digiline_design_high-fidelity-top-text {
+              
+            }
+          }
+        }
+        .digiline_design_high-fidelity-bottom-container {
+          display: none;
+          .digiline_design_high-fidelity-bottom {
+            
+            .digiline_design_high-fidelity-bottom-left {
+              .digiline_design_high-fidelity-bottom-left-logo {
+
+              }
+            }
+      
+            .digiline_design_high-fidelity-bottom-right {
+    
+              .digiline_design_high-fidelity-bottom-right-desktop {
+
+              }
+            }
+      
+            .digiline_design_high-fidelity-bottom-laptop {
+              
+            }
+          }
+    
+          .digiline_design_high-fidelity-bottom-container_background {
+
+          }
+        }
+        .digiline_design_high-fidelity-bottom-mobile-container {
+          display: block;
+        }
+
+        .digiline_design-systems {
+          height: auto;
+          .digiline_design-systems_example-container {
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+            .digiline_design-systems_example-img {
+              width: 80%;
+              margin: 24px 0;
+            }
+          }
+          .digiline_design_prototype-button-container {
+          }
+        }
+        .cs-bottom-navigation {
+          margin-bottom: 48px;
+        }
+     }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .digiline {
+    .digiline_container {
+      margin: 0 24px;
+      .digiline_container-top {
+        .digiline_title-img {
+          width: 90%;
+        }
+      }
+    }
+    .digiline_desktops-container {
+      .digiline_desktops-container_background-boxes-1 {}
+      .digiline_desktops-container_background-boxes-2 {}
+      .digiline_desktops-inner-container {
+        margin: 0 24px;
+        position: static;
+        .digiline_desktops-container_laptop {
+          position: static;
+          width: 100%;
+        }
+        .digiline_desktops-inner-container_desktops {
+          display: none;
+        }
+      }
+    }
+    .digiline_competitive-analysis {
+      .digiline_competitive-analysis_inner-container {
+        margin: 0 24px;
+        position: relative;
+        align-items: center;
+
+        .digiline_competitive-analysis_inner-container-text {
+
+        }
+        .digiline_competitive-analysis_inner-container_background-img {
+          display: none;
+        }
+        .digiline_competitive-analysis_inner-container_front-img {
+          position: static;
+          width: 100%;
+        }
+      }
+    }
+
+    .digiline_design {
+  
+      .digiline_design-container {
+  
+        // Mood Board
+        .digiline_design_mood-board-container {
+          height: 100%;
+          flex-direction: column;
+          align-items: center;
+          .digiline_design_mood-board-img {
+            width: 70%;
+            height: auto;
+          }
+        }
+  
+        // Style tile
+        .digiline_design_style-tile-container {
+          flex-direction: column;
+          height: 100%;
+          .digiline_design_style-tile-img {
+            margin: 24px 0;
+            width: 100%;
+            height: auto;
+          }
+        }
+  
+        // High fidelity
+        .digiline_design_high-fidelity-top-container {
+          height: 100%;
+          padding-bottom: 48px;
+          flex-direction: column;
+
+          .digiline_design_high-fidelity-top-img {
+            height: auto;
+            width: 90%;
+          }
+  
+          .digiline_design_high-fidelity-top-arrow {
+            margin: 24px 0;
+            height: 35px;
+            transform: rotate(90deg)
+          }
+        }
+      }
+      .digiline_design_high-fidelity-bottom-mobile-container {
+        .digiline_design_high-fidelity-bottom-mobile {
+          .digiline_design_high-fidelity-bottom-mobile-top {
+            .digiline_design_high-fidelity-bottom-mobile-top-logo {
+              width: 90%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

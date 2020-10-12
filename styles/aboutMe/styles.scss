@@ -1,0 +1,139 @@
+@import '../shared/variables.scss';
+
+
+.about-me {
+  width: 100%;
+
+  .about-me_container {
+    height: 100%;
+    margin: 0 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .about-me_container-top {
+      width: 100%;
+      height: 360px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      .about-me_title-img {
+        width: 70%;
+      }
+    }
+  }
+
+  .about-me_main-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $cream;
+    position: relative;
+    // relative for triangle positioning
+
+    .about-me_main-container-top {
+      display: flex;
+      height: 100%;
+      flex-direction: row;
+      margin: 82px 42px 0;
+
+      .about-me_main-container-top-left {
+        height: 330px;
+        width: 35%;
+        padding-top: 20px;
+        display: flex;
+        justify-content: flex-start;
+        
+        .about-me_main-container-top-left_portrait-frame {
+          position: relative;
+          width: 248px;
+          background-color: $greyBlue;
+        }
+  
+        .about-me_main-container-top-left_portrait {
+          position: absolute;
+          height: 330px;
+          width: 248px;
+          z-index: 1000;
+          left: 20px;
+          bottom: 20px;
+        }
+      }
+      .about-me_main-container-top-left_portrait-mobile {
+        display: none;
+      }
+
+      .about-me_main-container-top-right {
+        width: 65%;
+        .about-me_main-container-top-right-text {
+          font-family: $jost;
+          font-size: 14px;
+          margin: 0;
+          color: $darkBlue;
+          opacity: 75%;
+        }
+
+        .bold {
+          font-weight: 600;
+        }
+      }
+
+    }
+
+    .about-me_main-container-bottom {
+      width: calc(100% - 124px);
+      margin: 42px auto;
+      display: flex;
+      justify-content: space-between;
+
+      .about-me_main-container-bottom-img {
+        width: 30%;
+        height: auto;
+      }
+    }
+  }
+}
+
+// MOBILE ABOUT ME PAGE
+@media screen and (max-width: 768px){
+  .about-me {
+
+    .about-me_container {
+      .about-me_container-top {
+        .about-me_title-img {
+          width: 80%;
+        }
+      }
+    }
+
+    .about-me_main-container {
+      padding-bottom: 82px;
+      .about-me_main-container-top {
+        display: block;
+  
+        .about-me_main-container-top-left {
+          display: none;
+        }
+        .about-me_main-container-top-left_portrait-mobile {
+          display: block;
+          float: left;
+          margin: 0 24px 24px 0;
+          width: 150px;
+        }
+  
+        .about-me_main-container-top-right {
+          width: 100%;
+          .about-me_main-container-top-right-text {
+            font-size: 12px;
+          }
+        }
+      }
+  
+      .about-me_main-container-bottom {
+        display: none;
+      }
+    }
+  }
+}

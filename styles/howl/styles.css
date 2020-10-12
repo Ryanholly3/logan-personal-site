@@ -1,0 +1,285 @@
+.howl {
+  width: 100%;
+}
+
+.howl .howl_container {
+  height: 100%;
+  margin: 0 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.howl .howl_container .howl_container-top {
+  width: 100%;
+  height: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.howl .howl_container .howl_container-top .howl_title-img {
+  height: 120px;
+}
+
+.howl .howl_background-container {
+  width: 100%;
+  height: 442px;
+  background-image: url("../assets/CS_howl/Rectangle@3x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.howl .howl_wireframe-competitive-analysis-container {
+  height: 100%;
+  margin: 0 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.howl .howl_wireframe-competitive-analysis-container .howl_wireframe-img {
+  width: 100%;
+}
+
+.howl .howl_wireframe-competitive-analysis-container .howl_wireframe-text {
+  margin-bottom: 36px;
+  width: 100%;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  color: #efe4d8;
+  opacity: 75%;
+}
+
+.howl .howl_design-container {
+  margin: 0 42px;
+}
+
+.howl .howl_design-container .howl_design_logo-iterations-container {
+  width: 100%;
+  height: 375px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.howl .howl_design-container .howl_design_logo-iterations-container .howl_design_logo-iterations-img {
+  height: 100%;
+}
+
+.howl .howl_design-container .howl_logo-iteration-text {
+  margin-bottom: 36px;
+  width: 100%;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  color: #efe4d8;
+  opacity: 75%;
+}
+
+.howl .howl_design-container .howl_logo-final-container {
+  width: 100%;
+  margin-bottom: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.howl .howl_design-container .howl_logo-final-container .howl_logo-final-inner-container {
+  width: 580px;
+}
+
+.howl .howl_design-container .howl_logo-final-container .howl_logo-final-inner-container .howl_logo-final-inner-img {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.howl .howl_design-container .howl_design_mood-boards-container {
+  width: 100%;
+  margin-bottom: 68px;
+  height: 205px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.howl .howl_design-container .howl_design_mood-boards-container .howl_design_mood-board-img {
+  height: 100%;
+}
+
+.howl .howl_design-container .howl_design_style-tiles-container {
+  width: 100%;
+  margin-bottom: 68px;
+  height: 163px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.howl .howl_design-container .howl_design_style-tiles-container .howl_design_style-tiles-img {
+  height: 100%;
+}
+
+.howl .howl_design-container .howl_design_high-fidelity-container {
+  width: 100%;
+  height: 569px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.howl .howl_design-container .howl_design_high-fidelity-container .howl_design_high-fidelity-img {
+  height: 100%;
+}
+
+.howl .howl_design-container .howl_design_high-fidelity-text {
+  margin-bottom: 36px;
+  width: 100%;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  color: #efe4d8;
+  opacity: 75%;
+}
+
+.howl .howl_final-mockups-container {
+  height: 695px;
+  width: 100%;
+  margin-bottom: 68px;
+  position: relative;
+}
+
+.howl .howl_final-mockups-container .howl_final-mockups_background-lines {
+  width: 100%;
+}
+
+.howl .howl_final-mockups-container .howl_final-mockups_desktop {
+  z-index: 1;
+  position: absolute;
+  width: 695px;
+  top: 55px;
+  right: 96px;
+}
+
+.howl .howl_final-mockups-container .howl_final-mockups_phone1 {
+  z-index: 3;
+  position: absolute;
+  width: 195px;
+  bottom: 36px;
+  left: 59px;
+}
+
+.howl .howl_final-mockups-container .howl_final-mockups_phone2 {
+  z-index: 2;
+  position: absolute;
+  width: 195px;
+  bottom: 36px;
+  left: 182px;
+}
+
+.howl .howl_final-mockups-container .how_final-mockups_text {
+  position: absolute;
+  width: 350px;
+  bottom: 6px;
+  left: 74px;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  color: #efe4d8;
+  opacity: 75%;
+}
+
+.howl .howl_design-systems-container {
+  margin: 0 42px 68px;
+}
+
+.howl .howl_design-systems-container .howl_design-systems_colors-container {
+  width: 100%;
+  margin: 0 0 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.howl .howl_design-systems-container .howl_design-systems_colors-container .howl_design-systems_colors-img {
+  width: 609px;
+}
+
+.howl .howl_design_prototype-button-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.howl .cs-bottom-navigation {
+  margin: 62px 42px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+/*# sourceMappingURL=styles.css.map */
