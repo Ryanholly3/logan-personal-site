@@ -261,6 +261,7 @@ header {
       font-size: 36px;
       color: $cream;
       margin: 0;
+      text-align: center;
     }
   }
   .common-summary-container_line {
@@ -295,6 +296,53 @@ header {
         color: $cream;
         margin: 0;
         opacity: 75%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+
+  .common-container {
+
+
+    .common-container_title-text {
+
+    }
+
+    .common-container_paragraph-text {
+      margin: 0 0 0 24px;
+    }
+  }
+
+  .common-summary-container {
+    height: 100%;
+    margin: 24px 24px;
+
+    .common-summary-container_title-container {
+      height: 100%;
+
+      .common-summary-container_title-text {
+  
+      }
+    }
+    .common-summary-container_line {
+
+    }
+
+    .common-summary-container_tool-date-team-container {
+      align-items: flex-start;
+
+      .common-summary-container_tdt-container {
+
+
+        .common-summary-container_tdt-title {
+
+        }
+
+        .common-summary-container_tdt-text {
+
+        }
       }
     }
   }
@@ -1222,7 +1270,7 @@ footer {
       align-items: center;
   
       .digiline_title-img {
-        height: 120px;
+        width: 60%;
       }
     }
   }
@@ -1334,7 +1382,7 @@ footer {
         align-items: flex-start;
 
         .digiline_design_mood-board-img {
-          height: 323px;
+          height: 320px;
         }
       }
 
@@ -1379,6 +1427,7 @@ footer {
         }
       }
     }
+    // Desktop
     .digiline_design_high-fidelity-bottom-container {
       width: 100%;
       margin: 24px 0 72px;
@@ -1430,6 +1479,41 @@ footer {
       }
     }
 
+    // Tablet and Mobile
+    .digiline_design_high-fidelity-bottom-mobile-container {
+      display: none;
+      width: 100%;
+      margin: 24px 0 72px;
+      .digiline_design_high-fidelity-bottom-mobile {
+        height: 100%;
+        margin: 0 42px;
+        width: calc(100% - 84px);
+        display: flex;
+        flex-direction: column;
+
+        .digiline_design_high-fidelity-bottom-mobile-top {
+          .digiline_design_high-fidelity-bottom-mobile-top-logo {
+            padding-top: 102px;
+            width: 312px;
+          }
+        }
+
+        .digiline_design_high-fidelity-bottom-mobile-middle {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 48px 0;
+          .digiline_design_high-fidelity-bottom-mobile-middle-desktop {
+            width: 70%;
+          }
+        }
+        .digiline_design_high-fidelity-bottom-mobile-middle-laptop {
+          width: 90%;
+          margin: auto;
+        }
+      }
+    }
+
     .digiline_design-systems {
       margin: 0 42px;
 
@@ -1456,6 +1540,191 @@ footer {
       margin: 62px 42px 0;
       display: flex;
       justify-content: flex-end;
+    }
+  }
+}
+
+// DIGILINE MOBILE
+
+@media screen and (max-width: 978px){
+  .digiline {
+     .digiline_design {
+        height: auto;
+        .digiline_design-container {
+          .digiline_design_mood-board-container {
+            .digiline_design_mood-board-img {
+              height: 250px;
+              margin-bottom: 24px;
+            }
+          }
+          .digiline_design_style-tile-container {
+            .digiline_design_style-tile-img {
+              height: 210px;
+            }
+          }
+          .digiline_design_high-fidelity-top-container {
+            height: 300px;
+            .digiline_design_high-fidelity-top-img {
+              width: 200px;
+            }
+    
+            .digiline_design_high-fidelity-top-arrow {
+              width: 24px;
+            }
+    
+            .digiline_design_high-fidelity-top-text {
+              
+            }
+          }
+        }
+        .digiline_design_high-fidelity-bottom-container {
+          display: none;
+          .digiline_design_high-fidelity-bottom {
+            
+            .digiline_design_high-fidelity-bottom-left {
+              .digiline_design_high-fidelity-bottom-left-logo {
+
+              }
+            }
+      
+            .digiline_design_high-fidelity-bottom-right {
+    
+              .digiline_design_high-fidelity-bottom-right-desktop {
+
+              }
+            }
+      
+            .digiline_design_high-fidelity-bottom-laptop {
+              
+            }
+          }
+    
+          .digiline_design_high-fidelity-bottom-container_background {
+
+          }
+        }
+        .digiline_design_high-fidelity-bottom-mobile-container {
+          display: block;
+        }
+
+        .digiline_design-systems {
+          height: auto;
+          .digiline_design-systems_example-container {
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+            .digiline_design-systems_example-img {
+              width: 80%;
+              margin: 24px 0;
+            }
+          }
+          .digiline_design_prototype-button-container {
+          }
+        }
+        .cs-bottom-navigation {
+          margin-bottom: 48px;
+        }
+     }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .digiline {
+    .digiline_container {
+      margin: 0 24px;
+      .digiline_container-top {
+        .digiline_title-img {
+          width: 90%;
+        }
+      }
+    }
+    .digiline_desktops-container {
+      .digiline_desktops-container_background-boxes-1 {}
+      .digiline_desktops-container_background-boxes-2 {}
+      .digiline_desktops-inner-container {
+        margin: 0 24px;
+        position: static;
+        .digiline_desktops-container_laptop {
+          position: static;
+          width: 100%;
+        }
+        .digiline_desktops-inner-container_desktops {
+          display: none;
+        }
+      }
+    }
+    .digiline_competitive-analysis {
+      .digiline_competitive-analysis_inner-container {
+        margin: 0 24px;
+        position: relative;
+        align-items: center;
+
+        .digiline_competitive-analysis_inner-container-text {
+
+        }
+        .digiline_competitive-analysis_inner-container_background-img {
+          display: none;
+        }
+        .digiline_competitive-analysis_inner-container_front-img {
+          position: static;
+          width: 100%;
+        }
+      }
+    }
+
+    .digiline_design {
+  
+      .digiline_design-container {
+  
+        // Mood Board
+        .digiline_design_mood-board-container {
+          height: 100%;
+          flex-direction: column;
+          align-items: center;
+          .digiline_design_mood-board-img {
+            width: 70%;
+            height: auto;
+          }
+        }
+  
+        // Style tile
+        .digiline_design_style-tile-container {
+          flex-direction: column;
+          height: 100%;
+          .digiline_design_style-tile-img {
+            margin: 24px 0;
+            width: 100%;
+            height: auto;
+          }
+        }
+  
+        // High fidelity
+        .digiline_design_high-fidelity-top-container {
+          height: 100%;
+          padding-bottom: 48px;
+          flex-direction: column;
+
+          .digiline_design_high-fidelity-top-img {
+            height: auto;
+            width: 90%;
+          }
+  
+          .digiline_design_high-fidelity-top-arrow {
+            margin: 24px 0;
+            height: 35px;
+            transform: rotate(90deg)
+          }
+        }
+      }
+      .digiline_design_high-fidelity-bottom-mobile-container {
+        .digiline_design_high-fidelity-bottom-mobile {
+          .digiline_design_high-fidelity-bottom-mobile-top {
+            .digiline_design_high-fidelity-bottom-mobile-top-logo {
+              width: 90%;
+            }
+          }
+        }
+      }
     }
   }
 }

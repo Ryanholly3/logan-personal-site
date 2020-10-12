@@ -297,6 +297,7 @@ header #menuToggle input:checked ~ ul {
   font-size: 36px;
   color: #efe4d8;
   margin: 0;
+  text-align: center;
 }
 
 .common-summary-container .common-summary-container_line {
@@ -342,6 +343,24 @@ header #menuToggle input:checked ~ ul {
   color: #efe4d8;
   margin: 0;
   opacity: 75%;
+}
+
+@media screen and (max-width: 768px) {
+  .common-container .common-container_paragraph-text {
+    margin: 0 0 0 24px;
+  }
+  .common-summary-container {
+    height: 100%;
+    margin: 24px 24px;
+  }
+  .common-summary-container .common-summary-container_title-container {
+    height: 100%;
+  }
+  .common-summary-container .common-summary-container_tool-date-team-container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 .custom-button {
@@ -1438,7 +1457,7 @@ footer .footer_container .footer_dot-container .footer_dot {
 }
 
 .digiline .digiline_container .digiline_container-top .digiline_title-img {
-  height: 120px;
+  width: 60%;
 }
 
 .digiline .digiline_desktops-container {
@@ -1575,7 +1594,7 @@ footer .footer_container .footer_dot-container .footer_dot {
 }
 
 .digiline .digiline_design .digiline_design-container .digiline_design_mood-board-container .digiline_design_mood-board-img {
-  height: 323px;
+  height: 320px;
 }
 
 .digiline .digiline_design .digiline_design-container .digiline_design_style-tile-container {
@@ -1688,6 +1707,53 @@ footer .footer_container .footer_dot-container .footer_dot {
   left: 0;
 }
 
+.digiline .digiline_design .digiline_design_high-fidelity-bottom-mobile-container {
+  display: none;
+  width: 100%;
+  margin: 24px 0 72px;
+}
+
+.digiline .digiline_design .digiline_design_high-fidelity-bottom-mobile-container .digiline_design_high-fidelity-bottom-mobile {
+  height: 100%;
+  margin: 0 42px;
+  width: calc(100% - 84px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.digiline .digiline_design .digiline_design_high-fidelity-bottom-mobile-container .digiline_design_high-fidelity-bottom-mobile .digiline_design_high-fidelity-bottom-mobile-top .digiline_design_high-fidelity-bottom-mobile-top-logo {
+  padding-top: 102px;
+  width: 312px;
+}
+
+.digiline .digiline_design .digiline_design_high-fidelity-bottom-mobile-container .digiline_design_high-fidelity-bottom-mobile .digiline_design_high-fidelity-bottom-mobile-middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 48px 0;
+}
+
+.digiline .digiline_design .digiline_design_high-fidelity-bottom-mobile-container .digiline_design_high-fidelity-bottom-mobile .digiline_design_high-fidelity-bottom-mobile-middle .digiline_design_high-fidelity-bottom-mobile-middle-desktop {
+  width: 70%;
+}
+
+.digiline .digiline_design .digiline_design_high-fidelity-bottom-mobile-container .digiline_design_high-fidelity-bottom-mobile .digiline_design_high-fidelity-bottom-mobile-middle-laptop {
+  width: 90%;
+  margin: auto;
+}
+
 .digiline .digiline_design .digiline_design-systems {
   margin: 0 42px;
 }
@@ -1729,6 +1795,135 @@ footer .footer_container .footer_dot-container .footer_dot {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+@media screen and (max-width: 978px) {
+  .digiline .digiline_design {
+    height: auto;
+  }
+  .digiline .digiline_design .digiline_design-container .digiline_design_mood-board-container .digiline_design_mood-board-img {
+    height: 250px;
+    margin-bottom: 24px;
+  }
+  .digiline .digiline_design .digiline_design-container .digiline_design_style-tile-container .digiline_design_style-tile-img {
+    height: 210px;
+  }
+  .digiline .digiline_design .digiline_design-container .digiline_design_high-fidelity-top-container {
+    height: 300px;
+  }
+  .digiline .digiline_design .digiline_design-container .digiline_design_high-fidelity-top-container .digiline_design_high-fidelity-top-img {
+    width: 200px;
+  }
+  .digiline .digiline_design .digiline_design-container .digiline_design_high-fidelity-top-container .digiline_design_high-fidelity-top-arrow {
+    width: 24px;
+  }
+  .digiline .digiline_design .digiline_design_high-fidelity-bottom-container {
+    display: none;
+  }
+  .digiline .digiline_design .digiline_design_high-fidelity-bottom-mobile-container {
+    display: block;
+  }
+  .digiline .digiline_design .digiline_design-systems {
+    height: auto;
+  }
+  .digiline .digiline_design .digiline_design-systems .digiline_design-systems_example-container {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .digiline .digiline_design .digiline_design-systems .digiline_design-systems_example-container .digiline_design-systems_example-img {
+    width: 80%;
+    margin: 24px 0;
+  }
+  .digiline .digiline_design .cs-bottom-navigation {
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .digiline .digiline_container {
+    margin: 0 24px;
+  }
+  .digiline .digiline_container .digiline_container-top .digiline_title-img {
+    width: 90%;
+  }
+  .digiline .digiline_desktops-container .digiline_desktops-inner-container {
+    margin: 0 24px;
+    position: static;
+  }
+  .digiline .digiline_desktops-container .digiline_desktops-inner-container .digiline_desktops-container_laptop {
+    position: static;
+    width: 100%;
+  }
+  .digiline .digiline_desktops-container .digiline_desktops-inner-container .digiline_desktops-inner-container_desktops {
+    display: none;
+  }
+  .digiline .digiline_competitive-analysis .digiline_competitive-analysis_inner-container {
+    margin: 0 24px;
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .digiline .digiline_competitive-analysis .digiline_competitive-analysis_inner-container .digiline_competitive-analysis_inner-container_background-img {
+    display: none;
+  }
+  .digiline .digiline_competitive-analysis .digiline_competitive-analysis_inner-container .digiline_competitive-analysis_inner-container_front-img {
+    position: static;
+    width: 100%;
+  }
+  .digiline .digiline_design .digiline_design-container .digiline_design_mood-board-container {
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .digiline .digiline_design .digiline_design-container .digiline_design_mood-board-container .digiline_design_mood-board-img {
+    width: 70%;
+    height: auto;
+  }
+  .digiline .digiline_design .digiline_design-container .digiline_design_style-tile-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+  .digiline .digiline_design .digiline_design-container .digiline_design_style-tile-container .digiline_design_style-tile-img {
+    margin: 24px 0;
+    width: 100%;
+    height: auto;
+  }
+  .digiline .digiline_design .digiline_design-container .digiline_design_high-fidelity-top-container {
+    height: 100%;
+    padding-bottom: 48px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .digiline .digiline_design .digiline_design-container .digiline_design_high-fidelity-top-container .digiline_design_high-fidelity-top-img {
+    height: auto;
+    width: 90%;
+  }
+  .digiline .digiline_design .digiline_design-container .digiline_design_high-fidelity-top-container .digiline_design_high-fidelity-top-arrow {
+    margin: 24px 0;
+    height: 35px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .digiline .digiline_design .digiline_design_high-fidelity-bottom-mobile-container .digiline_design_high-fidelity-bottom-mobile .digiline_design_high-fidelity-bottom-mobile-top .digiline_design_high-fidelity-bottom-mobile-top-logo {
+    width: 90%;
+  }
 }
 
 .howl {
