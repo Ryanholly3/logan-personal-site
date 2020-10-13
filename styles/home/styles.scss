@@ -168,6 +168,7 @@
             font-size: 18px;
             color: $cream;
             opacity: 75%;
+            white-space: nowrap;
           }
         }
       }
@@ -247,7 +248,6 @@
         .home_about-me_bottom-container-skills_columns {
 
           .home_about-me_bottom-container-skills_column {
-            width: 160px;
             margin: 0 12px;
             .home_about-me_bottom-container-skills_title-text {
             }
