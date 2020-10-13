@@ -4,7 +4,7 @@
 
 .home_about-me {
   width: 100%;
-  height: auto;
+  height: 1300px;
   display: flex;
   flex-direction: row;
   background-image: url("../../assets/homePageCaseStudy/BackgroundImage.png");
@@ -111,7 +111,6 @@
     .home_about-me_bottom-container {
       width: 95%;
       margin-top: 60px;
-      height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -136,7 +135,6 @@
     .home_about-me_bottom-container-skills {
       width: 100%;
       margin: 60px 0;
-      height: 100%;
       display: flex;
       flex-direction: column;
 
@@ -201,6 +199,7 @@
 // mobile HOME PAGE
 @media screen and (max-width: 768px){
   .home_about-me {
+    height: 1000px;
     .home_about-me_container {
       margin: 24px 24px 0;
 
@@ -214,6 +213,7 @@
 
           .home_about-me_left-container_title {
             text-align: center;
+            font-size: 36px;
           }
           .home_about-me_left-container_divider {
             margin: 0 auto;
@@ -241,6 +241,7 @@
   
         .home_about-me_bottom-container-skills_title {
           text-align: center;
+          font-size: 36px;
         }
   
         .home_about-me_bottom-container-skills_columns {
