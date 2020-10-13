@@ -496,6 +496,12 @@ header #menuToggle input:checked ~ ul {
   width: 170px !important;
 }
 
+@media screen and (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
 .triangle-right {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);

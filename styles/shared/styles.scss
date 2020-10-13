@@ -480,6 +480,12 @@ header {
   width: 170px !important;
 }
 
+@media screen and (max-width: 768px){
+  .desktop-only {
+    display: none;
+  }
+}
+
 // Triangle Animations 
 
 .triangle-right {

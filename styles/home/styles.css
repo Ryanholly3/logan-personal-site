@@ -1,6 +1,6 @@
 .home_about-me {
   width: 100%;
-  height: 1000px;
+  height: 1300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,6 +173,62 @@
   opacity: 75%;
 }
 
+.home_about-me .home_about-me_container .home_about-me_bottom-container-skills {
+  width: 100%;
+  margin: 60px 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home_about-me .home_about-me_container .home_about-me_bottom-container-skills .home_about-me_bottom-container-skills_title {
+  font-family: "Archivo Black", sans-serif;
+  letter-spacing: 1px;
+  font-size: 40px;
+  margin-top: 0;
+  color: #efe4d8;
+}
+
+.home_about-me .home_about-me_container .home_about-me_bottom-container-skills .home_about-me_bottom-container-skills_columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.home_about-me .home_about-me_container .home_about-me_bottom-container-skills .home_about-me_bottom-container-skills_columns .home_about-me_bottom-container-skills_column {
+  width: 50%;
+}
+
+.home_about-me .home_about-me_container .home_about-me_bottom-container-skills .home_about-me_bottom-container-skills_columns .home_about-me_bottom-container-skills_column .home_about-me_bottom-container-skills_title-text {
+  width: 100%;
+  margin: 0;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  color: #efe4d8;
+  opacity: 75%;
+  text-decoration: underline;
+}
+
+.home_about-me .home_about-me_container .home_about-me_bottom-container-skills .home_about-me_bottom-container-skills_columns .home_about-me_bottom-container-skills_column .home_about-me_bottom-container-skills_text {
+  width: 100%;
+  margin: 0;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  color: #efe4d8;
+  opacity: 75%;
+}
+
 .home_about-me .home_about-me_container .home_about-me_bottom_continue-reading-container {
   width: 100%;
   height: 32px;
@@ -200,7 +256,7 @@
 
 @media screen and (max-width: 768px) {
   .home_about-me {
-    height: 700px;
+    height: 1000px;
   }
   .home_about-me .home_about-me_container {
     margin: 24px 24px 0;
@@ -237,6 +293,13 @@
   }
   .home_about-me .home_about-me_container .home_about-me_bottom-container {
     display: none;
+  }
+  .home_about-me .home_about-me_container .home_about-me_bottom-container-skills .home_about-me_bottom-container-skills_title {
+    text-align: center;
+  }
+  .home_about-me .home_about-me_container .home_about-me_bottom-container-skills .home_about-me_bottom-container-skills_columns .home_about-me_bottom-container-skills_column {
+    width: 160px;
+    margin: 0 12px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
