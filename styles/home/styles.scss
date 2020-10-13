@@ -4,7 +4,7 @@
 
 .home_about-me {
   width: 100%;
-  height: 1300px;
+  height: auto;
   display: flex;
   flex-direction: row;
   background-image: url("../../assets/homePageCaseStudy/BackgroundImage.png");
@@ -20,7 +20,7 @@
 
     .home_about-me_top-container {
       width: 100%;
-      height: 500px;
+      height: auto;
       display: flex;
       flex-direction: row;
 
@@ -201,7 +201,6 @@
 // mobile HOME PAGE
 @media screen and (max-width: 768px){
   .home_about-me {
-    height: 1000px;
     .home_about-me_container {
       margin: 24px 24px 0;
 
