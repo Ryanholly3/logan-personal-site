@@ -215,5 +215,77 @@
   }
 }
 
-@media screen and (min-width: 768px){}
+@media screen and (max-width: 978px){
+  .howl {
+    .howl_competitive-analysis {
+    }
+    .howl_design-container {
+      .howl_design-affinity-mapping-container {
+
+        .howl_design-affinity-mapping-img {
+        }
+      }
+  
+      .howl_design_mood-boards-container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-bottom: 36px;
+
+        .howl_design_mood-board-img {
+          height: inherit;
+          width: 80%;
+          margin: 12px 0;
+        }
+      }
+      .howl_design_style-tiles-container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-bottom: 36px;
+
+        .howl_design_style-tiles-img {
+          height: inherit;
+          width: 80%;
+          margin: 12px 0;
+        }
+      }
+  
+      .howl_design_high-fidelity-container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-bottom: 36px;
+  
+        .howl_design_high-fidelity-img {
+          height: inherit;
+          width: 80%;
+          margin: 12px 0;
+        }
+      }
+    }
+    .howl_design-systems-container {
+  
+      .howl_design-systems_colors-container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+  
+        .howl_design-systems_colors-img {
+          width: 60%;
+          margin: 12px 0;
+        }
+      }
+    }
+    
+  }
+}
+
+@media screen and (max-width: 768px){
+  .howl {
+    .howl_competitive-analysis {
+      height: 400px;
+    }
+  }
+}
 

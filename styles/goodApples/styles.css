@@ -67,6 +67,7 @@
 .good-apples .good-apples_competitive-analysis {
   width: 100%;
   height: 550px;
+  margin-bottom: 62px;
   background-color: #efe4d8;
 }
 
@@ -120,6 +121,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 62px;
 }
 
 .good-apples .good-apples_design-container .good-apples_design-affinity-mapping-container .good-apples_design-affinity-mapping-img {

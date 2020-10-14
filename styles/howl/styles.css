@@ -282,4 +282,75 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+@media screen and (max-width: 978px) {
+  .howl .howl_design-container .howl_design_mood-boards-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+    margin-bottom: 36px;
+  }
+  .howl .howl_design-container .howl_design_mood-boards-container .howl_design_mood-board-img {
+    height: inherit;
+    width: 80%;
+    margin: 12px 0;
+  }
+  .howl .howl_design-container .howl_design_style-tiles-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+    margin-bottom: 36px;
+  }
+  .howl .howl_design-container .howl_design_style-tiles-container .howl_design_style-tiles-img {
+    height: inherit;
+    width: 80%;
+    margin: 12px 0;
+  }
+  .howl .howl_design-container .howl_design_high-fidelity-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+    margin-bottom: 36px;
+  }
+  .howl .howl_design-container .howl_design_high-fidelity-container .howl_design_high-fidelity-img {
+    height: inherit;
+    width: 80%;
+    margin: 12px 0;
+  }
+  .howl .howl_design-systems-container .howl_design-systems_colors-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+  }
+  .howl .howl_design-systems-container .howl_design-systems_colors-container .howl_design-systems_colors-img {
+    width: 60%;
+    margin: 12px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .howl .howl_competitive-analysis {
+    height: 400px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
