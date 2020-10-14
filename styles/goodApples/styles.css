@@ -1,1 +1,219 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+.good-apples {
+  width: 100%;
+}
+
+.good-apples .good-apples_container {
+  height: 100%;
+  margin: 0 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.good-apples .good-apples_container .good-apples_container-top {
+  width: 100%;
+  height: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.good-apples .good-apples_container .good-apples_container-top .good-apples_title-img {
+  width: 60%;
+}
+
+.good-apples .good-apples_desktops-container {
+  margin: 0 42px;
+  height: 442px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2e383f;
+}
+
+.good-apples .good-apples_desktops-container .good-apples_logo {
+  margin: 5% 0 0 5%;
+  width: 250px;
+}
+
+.good-apples .good-apples_desktops-container .good-apples_desktops-container_img {
+  width: 90%;
+  margin: auto;
+}
+
+.good-apples .good-apples_competitive-analysis {
+  width: 100%;
+  height: 550px;
+  background-color: #efe4d8;
+}
+
+.good-apples .good-apples_competitive-analysis .good-apples_competitive-analysis_inner-container {
+  height: 100%;
+  margin: 0 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+}
+
+.good-apples .good-apples_competitive-analysis .good-apples_competitive-analysis_inner-container .good-apples_competitive-analysis_inner-container-text {
+  margin: 0;
+  position: absolute;
+  font-family: "Jost", sans-serif;
+  color: #1b262f;
+  font-size: 14px;
+  bottom: 8px;
+  left: 0px;
+}
+
+.good-apples .good-apples_competitive-analysis .good-apples_competitive-analysis_inner-container .good-apples_competitive-analysis_inner-container_background-img {
+  padding-top: 68px;
+  width: 460px;
+}
+
+.good-apples .good-apples_competitive-analysis .good-apples_competitive-analysis_inner-container .good-apples_competitive-analysis_inner-container_front-img {
+  width: 80%;
+  margin: auto;
+}
+
+.good-apples .good-apples_design-container {
+  margin: 0 42px;
+}
+
+.good-apples .good-apples_design-container .good-apples_design-affinity-mapping-container .good-apples_design-affinity-mapping-img {
+  width: 100%;
+  height: 375px;
+}
+
+.good-apples .good-apples_design-container .good-apples_design_mood-boards-container {
+  width: 100%;
+  margin-bottom: 68px;
+  height: 205px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.good-apples .good-apples_design-container .good-apples_design_mood-boards-container .good-apples_design_mood-board-img {
+  height: 100%;
+}
+
+.good-apples .good-apples_design-container .good-apples_design_style-tiles-container {
+  width: 100%;
+  margin-bottom: 68px;
+  height: 163px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.good-apples .good-apples_design-container .good-apples_design_style-tiles-container .good-apples_design_style-tiles-img {
+  height: 100%;
+}
+
+.good-apples .good-apples_design-container .good-apples_design_high-fidelity-container {
+  width: 100%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.good-apples .good-apples_design-container .good-apples_design_high-fidelity-container .good-apples_design_high-fidelity-img {
+  height: 270px;
+}
+
+.good-apples .good-apples_design-systems-container {
+  margin: 0 42px 68px;
+}
+
+.good-apples .good-apples_design-systems-container .good-apples_design-systems_colors-container {
+  width: 100%;
+  margin: 0 0 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.good-apples .good-apples_design-systems-container .good-apples_design-systems_colors-container .good-apples_design-systems_colors-img {
+  width: 350px;
+}
+
+.good-apples .good-apples_design-systems-container .good-apples_design_prototype-button-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.good-apples .good-apples_design-systems-container .cs-bottom-navigation {
+  margin: 62px 42px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=styles.css.map */
