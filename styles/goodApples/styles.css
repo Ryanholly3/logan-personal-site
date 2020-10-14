@@ -113,9 +113,17 @@
   margin: 0 42px;
 }
 
+.good-apples .good-apples_design-container .good-apples_design-affinity-mapping-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .good-apples .good-apples_design-container .good-apples_design-affinity-mapping-container .good-apples_design-affinity-mapping-img {
-  width: 100%;
-  height: 375px;
+  width: 90%;
 }
 
 .good-apples .good-apples_design-container .good-apples_design_mood-boards-container {
@@ -215,5 +223,76 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 978px) {
+  .good-apples .good-apples_design-container .good-apples_design_mood-boards-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+    margin-bottom: 36px;
+  }
+  .good-apples .good-apples_design-container .good-apples_design_mood-boards-container .good-apples_design_mood-board-img {
+    height: inherit;
+    width: 80%;
+    margin: 12px 0;
+  }
+  .good-apples .good-apples_design-container .good-apples_design_style-tiles-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+    margin-bottom: 36px;
+  }
+  .good-apples .good-apples_design-container .good-apples_design_style-tiles-container .good-apples_design_style-tiles-img {
+    height: inherit;
+    width: 80%;
+    margin: 12px 0;
+  }
+  .good-apples .good-apples_design-container .good-apples_design_high-fidelity-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+    margin-bottom: 36px;
+  }
+  .good-apples .good-apples_design-container .good-apples_design_high-fidelity-container .good-apples_design_high-fidelity-img {
+    height: inherit;
+    width: 80%;
+    margin: 12px 0;
+  }
+  .good-apples .good-apples_design-systems-container .good-apples_design-systems_colors-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+  }
+  .good-apples .good-apples_design-systems-container .good-apples_design-systems_colors-container .good-apples_design-systems_colors-img {
+    width: 60%;
+    margin: 12px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .good-apples .good-apples_competitive-analysis {
+    height: 400px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
