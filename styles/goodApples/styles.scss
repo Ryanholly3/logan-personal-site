@@ -215,7 +215,7 @@
         height: auto;
   
         .good-apples_design-systems_colors-img {
-          width: 60%;
+          width: 70%;
           margin: 12px 0;
         }
       }
@@ -226,6 +226,19 @@
 
 @media screen and (max-width: 768px){
   .good-apples {
+    .good-apples_container {
+      .good-apples_container-top {
+        .good-apples_title-img {
+          width: 90%;
+        }
+      }
+    }
+
+    .good-apples_desktops-container {
+      .good-apples_desktops-container_img {
+        width: 100%;
+      }
+    }
     .good-apples_competitive-analysis {
       height: 400px;
     }

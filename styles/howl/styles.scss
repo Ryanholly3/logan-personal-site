@@ -220,6 +220,7 @@
     .howl_competitive-analysis {
     }
     .howl_design-container {
+      margin-bottom: 62px;
       .howl_design-affinity-mapping-container {
 
         .howl_design-affinity-mapping-img {
@@ -263,9 +264,18 @@
           margin: 12px 0;
         }
       }
+    
+      .howl_design_logo-iterations-container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        .howl_design_logo-iterations-img {
+          width: 50%;
+          margin: 12px 0;
+        }
+      }
     }
     .howl_design-systems-container {
-  
       .howl_design-systems_colors-container {
         flex-direction: column;
         align-items: center;
@@ -278,6 +288,33 @@
       }
     }
     
+    .howl_final-mockups-container {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .howl_final-mockups_background-lines {
+        display: none;
+      }
+  
+      .howl_final-mockups_desktop {
+        position: static;
+        width: 80%;
+      }
+  
+      .howl_final-mockups_phone1{
+        display: none;
+      }
+      .howl_final-mockups_phone2{
+        display: none
+      }
+      .how_final-mockups_text {
+        position: static;
+        width: 80%;
+      }
+    }
   }
 }
 

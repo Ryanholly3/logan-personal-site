@@ -480,8 +480,14 @@ header {
   width: 170px !important;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
   .desktop-only {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-only {
     display: none;
   }
 }

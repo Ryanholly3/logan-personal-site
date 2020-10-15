@@ -284,6 +284,9 @@
 }
 
 @media screen and (max-width: 978px) {
+  .howl .howl_design-container {
+    margin-bottom: 62px;
+  }
   .howl .howl_design-container .howl_design_mood-boards-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -332,6 +335,20 @@
     width: 80%;
     margin: 12px 0;
   }
+  .howl .howl_design-container .howl_design_logo-iterations-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+  }
+  .howl .howl_design-container .howl_design_logo-iterations-container .howl_design_logo-iterations-img {
+    width: 50%;
+    margin: 12px 0;
+  }
   .howl .howl_design-systems-container .howl_design-systems_colors-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -345,6 +362,39 @@
   .howl .howl_design-systems-container .howl_design-systems_colors-container .howl_design-systems_colors-img {
     width: 60%;
     margin: 12px 0;
+  }
+  .howl .howl_final-mockups-container {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .howl .howl_final-mockups-container .howl_final-mockups_background-lines {
+    display: none;
+  }
+  .howl .howl_final-mockups-container .howl_final-mockups_desktop {
+    position: static;
+    width: 80%;
+  }
+  .howl .howl_final-mockups-container .howl_final-mockups_phone1 {
+    display: none;
+  }
+  .howl .howl_final-mockups-container .howl_final-mockups_phone2 {
+    display: none;
+  }
+  .howl .howl_final-mockups-container .how_final-mockups_text {
+    position: static;
+    width: 80%;
   }
 }
 
