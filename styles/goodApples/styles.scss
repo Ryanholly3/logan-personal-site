@@ -84,12 +84,11 @@
   .good-apples_design-container {
     margin: 0 42px;
     .good-apples_design-affinity-mapping-container {
-      display: flex;
-      justify-content: center;
+      width: 100%;
       margin-bottom: 62px;
-      height: 100%;
       .good-apples_design-affinity-mapping-img {
         width: 90%;
+        margin: auto;
       }
     }
 
