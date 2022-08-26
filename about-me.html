@@ -229,21 +229,26 @@
       let triggered1 = false
       let triggered2 = false
 
-      window.onscroll = (e) => {
-        if (window.scrollY > 5 && triggered1 === false){
-          document.getElementById('t1').className += " t1"
-          document.getElementById('t2').className += " t2"
-          document.getElementById('t3').className += " t3"
-          triggered1 = true
-        }
+      const handleScroll = (triggerOne, triggerTwo) => {
+        if (window.scrollY > triggerOne && triggered1 === false){
+            document.getElementById('t1').className += " t1"
+            document.getElementById('t2').className += " t2"
+            document.getElementById('t3').className += " t3"
+            triggered1 = true
+          }
 
-        if (window.scrollY > 680 && triggered2 === false){
-          document.getElementById('t4').className += " t1"
-          document.getElementById('t5').className += " t2"
-          document.getElementById('t6').className += " t3"
-          triggered2 = true
-        }
+          if (window.scrollY > triggerTwo && triggered2 === false){
+            document.getElementById('t4').className += " t1"
+            document.getElementById('t5').className += " t2"
+            document.getElementById('t6').className += " t3"
+            triggered2 = true
+          }
       }
+
+      document.addEventListener('scroll', () => {
+          handleScroll(5, 680)
+        }, { passive: true }
+      )
     </script>
 </html>
 
